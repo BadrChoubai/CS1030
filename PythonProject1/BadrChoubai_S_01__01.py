@@ -61,7 +61,7 @@ def main():
         answer = get_user_input(prompt)
 
         if (answer == ""):
-            exit(0)
+            exit()
         else:
             prompt_answers[i] = int(answer)
 
