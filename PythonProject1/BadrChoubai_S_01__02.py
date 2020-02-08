@@ -9,11 +9,18 @@ This is my solution for problem two of three of Python Project One
 
 The Problem:
 
-    Add a loop to the first problem's program. 
+    Convert from miles per gallon to liters per kilomete
+    
+    2.1 Prompt the user to enter a figure for miles per gallon.
 
-    2.1 Create the new Python file by copying the file created in Exercise 1.
+    2.2 If the amount is <= 0, exit the program.
 
-    2.2 Change the program to add a loop to continuously ask the user for a height to convert to meters. If the user enters an empty string (i.e., presses just the <Enter> key) exit the program.
+    2.3 Convert miles to kilometers and gallons to liters. (Google the formulas.)
+
+    2.4 From the previous step, calculate liters per kilometer.
+
+    2.5 Print the miles per gallon and liters per kilometer with relevant messages, formatting your results to one decimal place.
+
+    2.6 Exit the program. 
 
 """
-
