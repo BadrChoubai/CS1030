@@ -26,25 +26,22 @@ The Problem:
 """
 
 
-def get_user_input(prompt: str) -> str:
-    prompt_message = str(f"{ prompt }: ")
-    return input(prompt_message)
+
+def get_user_input(prompts: list) -> list:
+    prompt_answers = [None]*len(prompts)
+
+    for i, prompt_message in enumerate(prompts):
+        answer = input(str(f"{ prompt_message }: "))
+        prompt_answers[i] = int(answer.strip())
+
+    return prompt_answers
 
 
 def main():
     prompts: list = ["Enter miles travelled",
                      "Gallons of fuel used? "]
-    prompt_answers: list = [None]*len(prompts)
 
-    for i, prompt in enumerate(prompts):
-        answer = get_user_input(prompt)
-        answer = int(answer)
-        if (answer == "" or answer <= 0):
-            exit()
-        else:
-            prompt_answers[i] = answer
-
-    miles, gallons = prompt_answers
+    miles, gallons = get_user_input(prompts) 
 
     kilometers = (miles * 1.60934)
     liters = (gallons * 3.7854)

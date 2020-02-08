@@ -38,9 +38,16 @@ def centimeters_to_meters(centimeters: float) -> float:
     return (centimeters / 100)
 
 
-def get_user_input(prompt: str) -> str:
-    prompt_message = str(f"{ prompt }: ")
-    return input(prompt_message)
+
+def get_user_input(prompts: list) -> list:
+    prompt_answers = [None]*len(prompts)
+
+    for i, prompt_message in enumerate(prompts):
+        answer = input(str(f"{ prompt_message }: "))
+        prompt_answers[i] = int(answer.strip())
+
+    return prompt_answers
+
 
 
 def inches_to_centimeters(inches: int) -> float:
@@ -55,17 +62,8 @@ def main():
 
     prompts: list = ["Please input your height in feet",
                      "Please input your height in inches"]
-    prompt_answers: list = [None]*len(prompts)
 
-    for i, prompt in enumerate(prompts):
-        answer = get_user_input(prompt)
-
-        if (answer == ""):
-            exit()
-        else:
-            prompt_answers[i] = int(answer)
-
-    feet, inches = prompt_answers
+    feet, inches = get_user_input(prompts) 
     height_str = str(f"{feet}\'-{inches}\"")
 
     inches_total = calculate_inches_total(feet) + inches
