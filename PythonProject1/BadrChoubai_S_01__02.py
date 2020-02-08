@@ -41,7 +41,7 @@ def main():
     prompts: list = ["Enter miles travelled",
                      "Gallons of fuel used? "]
 
-    miles, gallons = get_user_input(prompts) 
+    [miles, gallons] = get_user_input(prompts) 
 
     kilometers = (miles * 1.60934)
     liters = (gallons * 3.7854)
@@ -53,7 +53,7 @@ def main():
     liters_per_kilometer = 1 / \
         (miles_per_gallon * kilometers_per_mile * gallons_per_liter)
 
-    mpg_str = str(f"{miles_per_gallon} mpg")
+    mpg_str = str(f"{miles_per_gallon:.2f} mpg")
     lpk_str = str(f"{liters_per_kilometer:.2f} lpk")
 
     output_str = str(
@@ -65,4 +65,3 @@ def main():
 if __name__ == "__main__":
     result = main()
     print(result)
-    exit()
