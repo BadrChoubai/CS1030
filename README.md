@@ -1,4 +1,4 @@
-# Metropolitan State University of Denver - Computer Science I
+# Metropolitan State University of Denver - CS1030
 
 Programming Languages: Python \
 Description: This repository contains source code for my CS1030 class. Homeworks, inclass solutions to problem and, extracurricular items.  
