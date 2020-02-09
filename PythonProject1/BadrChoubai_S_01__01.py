@@ -64,7 +64,7 @@ def main():
     prompts: list = ["Please input your height in feet",
                      "Please input your height in inches"]
 
-    feet, inches = get_user_input(prompts) 
+    [feet, inches] = get_user_input(prompts) 
     height_str = str(f"{feet}\'-{inches}\"")
 
     inches_total = calculate_inches_total(feet) + inches
@@ -79,3 +79,4 @@ def main():
 if __name__ == "__main__":
     result = main()
     print(result)
+
