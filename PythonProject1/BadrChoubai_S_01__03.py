@@ -67,7 +67,7 @@ def main():
     prompts: list = ["Give me a letter from a-h",
                      "Give me a number from 1-8"]
 
-    letter, number = get_user_input(prompts)
+    [letter, number] = get_user_input(prompts)
 
     letter_range = list(map(chr, range(97, 105)))
     number_range = [i for i in range(1, 9)]
@@ -87,4 +87,4 @@ def main():
 if __name__ == "__main__":
     result = main()
     print(result)
-    exit()
+
