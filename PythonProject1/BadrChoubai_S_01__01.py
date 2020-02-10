@@ -30,7 +30,7 @@ The Problem:
 """
 
 
-def calculate_inches_total(feet: int) -> int:
+def feet_to_inches(feet: int) -> int:
     return (feet * 12)
 
 
@@ -38,25 +38,22 @@ def centimeters_to_meters(centimeters: float) -> float:
     return (centimeters / 100)
 
 
-def calculate_meters(inches):
+def calculate_meters(inches: int) -> float:
     return (centimeters_to_meters(inches_to_centimeters(inches)))
 
 
 def get_user_input(prompts: list) -> list:
-    prompt_answers = [None]*len(prompts)
+    prompt_answers: list = [] 
 
-    for i, prompt_message in enumerate(prompts):
-        answer = input(str(f"{ prompt_message }: "))
-        prompt_answers[i] = int(answer.strip())
+    for prompt_message in prompts:
+        answer = input(f"{ prompt_message }: ")
+        prompt_answers.append(int(answer.strip()))
 
     return prompt_answers
 
 
-
 def inches_to_centimeters(inches: int) -> float:
     return (inches * 2.54)
-
-
 
 
 def main():
@@ -64,19 +61,17 @@ def main():
     prompts: list = ["Please input your height in feet",
                      "Please input your height in inches"]
 
-    [feet, inches] = get_user_input(prompts) 
-    height_str = str(f"{feet}\'-{inches}\"")
+    feet, inches = get_user_input(prompts) 
+    height_str = str(f"{feet}'-{inches}\"")
 
-    inches_total = calculate_inches_total(feet) + inches
+    inches_total = feet_to_inches(feet) + inches
     meters = calculate_meters(inches_total)
 
-    output_str = str(
-        f"Original Height Input {height_str} :: Converted to meters {meters}m")
+    output_str = f"Original Height Input {height_str} :: Converted to meters {meters:.2f}m"
 
-    return output_str if inches_total <= 95 else "Wow, you're so tall!"
+    print(output_str) if inches_total <= 95 else print("Wow, you're so tall!")
 
 
 if __name__ == "__main__":
-    result = main()
-    print(result)
+    main()
 
