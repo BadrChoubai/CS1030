@@ -62,7 +62,7 @@ def main():
                      "Please input your height in inches"]
 
     feet, inches = get_user_input(prompts) 
-    height_str = str(f"{feet}'-{inches}\"")
+    height_str = f"{feet}'-{inches}\""
 
     inches_total = feet_to_inches(feet) + inches
     meters = calculate_meters(inches_total)
