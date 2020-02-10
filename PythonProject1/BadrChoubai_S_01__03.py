@@ -27,11 +27,11 @@ The Problem:
 
 
 def get_user_input(prompts: list) -> list:
-    prompt_answers = [None]*len(prompts)
+    prompt_answers: list  = [] 
 
-    for i, prompt_message in enumerate(prompts):
-        answer = input(str(f"{ prompt_message }: "))
-        prompt_answers[i] = answer.strip()
+    for prompt_message in prompts:
+        answer = input(f"{ prompt_message }: ")
+        prompt_answers.append(answer.strip())
 
     return prompt_answers
 
@@ -74,17 +74,16 @@ def main():
 
     if letter in letter_range and int(number) in number_range:
         color = find_color(letter, number)
-        output_str = str(f"Tile {letter}{number} is {color}")
+        output_str = f"Tile {letter}{number} is {color}"
 
-        return output_str
+        print(output_str)
 
     else:
         error = str(
             "Double check that the values you entered are in the correct range.")
-        return error
+        print(error)
 
 
 if __name__ == "__main__":
-    result = main()
-    print(result)
+    main()
 
