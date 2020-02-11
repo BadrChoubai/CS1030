@@ -1,6 +1,14 @@
 # MSU Denver CS1030
 
-## What is this?
+## Welcome
 
-This is a small site I spun up using GitHub resources to act as a knowledge base form my CS1030 classmates.
+This is a small project dedicated to giving students taking CS1030 a place to go to for useful resources.
+ 
+## Resources 
+
+### Getting Your Development Environment Set Up
+
+### Python
+
+### The Community
 
