@@ -43,7 +43,7 @@ def calculate_meters(inches: int) -> float:
 
 
 def get_user_input(prompts: list) -> list:
-    prompt_answers: list = [] 
+    prompt_answers: list = []
 
     for prompt_message in prompts:
         answer = input(f"{ prompt_message }: ")
@@ -61,7 +61,7 @@ def main():
     prompts: list = ["Please input your height in feet",
                      "Please input your height in inches"]
 
-    feet, inches = get_user_input(prompts) 
+    feet, inches = get_user_input(prompts)
     height_str = f"{feet}'-{inches}\""
 
     inches_total = feet_to_inches(feet) + inches
@@ -74,4 +74,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
