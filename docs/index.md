@@ -4,9 +4,9 @@
 
 This is a small project dedicated to giving students taking CS1030 a place to go to for useful resources.
  
-## Resources 
+If there's anything you're struggling to learn or are curious about, feel free to talk to me during class and I can point you in the right direction.
 
-_If there's a resource you'd like to have added, let me know during class_
+## Resources 
 
 ### Getting Your Development Environment Set Up
 
@@ -26,12 +26,19 @@ _If there's a resource you'd like to have added, let me know during class_
 - [Harvards CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381L3iZyDTxRwOBuUt6m1FnW)
 - [The Missing Semester of Your CS Education (MIT)](https://missing.csail.mit.edu/)
 - [Upcase by thoughtbot](https://thoughtbot.com/upcase)
-
-### Miscellaneous?
-
-- [Developer Roadmaps](https://roadmap.sh/) - is useful for getting a quick overview for what you need to learn whether you want to do Front-end development or Back-end development
+- [Talk Python To Me (Podcast)](https://talkpython.fm/episodes/all)
 
 ### The Community
 
 - [Denver Devs](https://denverdevs.org/) is a Slack channel dedicated to Denver's tech community. Useful for finding local events and having access to people who can answer question you might have about the industry.
 - [DenHac](https://denhac.org/) is Denver's local hackerspace, they regularly host a variety of events with like Chill Code Night and their monthly Quantum Computing meetup.
+
+### Podcasts 
+
+- [Software Engineering Daily](https://softwareengineeringdaily.com/category/all-episodes/exclusive-content/Podcast/)
+- [The Indie Hackers Podcast](https://www.indiehackers.com/podcast)
+
+### Miscellaneous?
+
+- [Developer Roadmaps](https://roadmap.sh/) - is useful for getting a quick overview for what you need to learn whether you want to do Front-end development or Back-end development
+- [Twilio Quest](https://www.twilio.com/quest/) - is a gamified way to teach yourself the basics of programming.
