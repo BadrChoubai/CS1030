@@ -20,13 +20,13 @@ If there's anything you're struggling to learn or are curious about, feel free t
 - [Derek Banas' - Getting Started with Python](https://www.youtube.com/watch?v=H1elmMBnykA) - Derek Banas' YouTube channel has proven to be extremely useful for learning not only Python but a lot of other programming languages and concepts.
 - [Real Python](https://realpython.com/) - A blog site with useful Python tutorials and articles on various topics in Python. They also have a YouTube channel to subscribe to, if you're more of a visual learner.
 - [Python Crash Course (PDF)](https://github.com/MrAlex6204/Books/blob/master/python-crash-course.pdf)
+- [Talk Python To Me (Podcast)](https://talkpython.fm/episodes/all)
 
 ### Extra Learning
 
 - [Harvards CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381L3iZyDTxRwOBuUt6m1FnW)
 - [The Missing Semester of Your CS Education (MIT)](https://missing.csail.mit.edu/)
 - [Upcase by thoughtbot](https://thoughtbot.com/upcase)
-- [Talk Python To Me (Podcast)](https://talkpython.fm/episodes/all)
 
 ### The Community
 
