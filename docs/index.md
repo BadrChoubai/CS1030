@@ -19,6 +19,7 @@ If there's anything you're struggling to learn or are curious about, feel free t
 - [Corey Schafer](https://www.youtube.com/user/schafer5/featured) - Corey Schafer's YouTube channel was one of the first channels I found when starting to learn Python. He has videos on other topics such as Data Visualization and Building a full stack application in Django (think, Ruby on Rails). 
 - [Derek Banas' - Getting Started with Python](https://www.youtube.com/watch?v=H1elmMBnykA) - Derek Banas' YouTube channel has proven to be extremely useful for learning not only Python but a lot of other programming languages and concepts.
 - [Real Python](https://realpython.com/) - A blog site with useful Python tutorials and articles on various topics in Python. They also have a YouTube channel to subscribe to, if you're more of a visual learner.
+- [Google Python Style Guide](://google.github.io/styleguide/pyguide.html)
 - [Python Crash Course (PDF)](https://github.com/MrAlex6204/Books/blob/master/python-crash-course.pdf)
 - [Talk Python To Me (Podcast)](https://talkpython.fm/episodes/all)
 
