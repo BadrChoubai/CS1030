@@ -34,9 +34,6 @@ If there's anything you're struggling to learn or are curious about, feel free t
 - [Denver Devs](https://denverdevs.org/) is a Slack channel dedicated to Denver's tech community. Useful for finding local events and having access to people who can answer question you might have about the industry.
 - [DenHac](https://denhac.org/) is Denver's local hackerspace, they regularly host a variety of events with like Chill Code Night and their monthly Quantum Computing meetup.
 
-<details>
-<summary>Extra Resources</summary>
-
 ### Podcasts 
 
 - [Software Engineering Daily](https://softwareengineeringdaily.com/category/all-episodes/exclusive-content/Podcast/)
@@ -45,7 +42,4 @@ If there's anything you're struggling to learn or are curious about, feel free t
 ### Miscellaneous?
 
 - [Developer Roadmaps](https://roadmap.sh/) - is useful for getting a quick overview for what you need to learn whether you want to do Front-end development or Back-end development
-- [Twilio Quest](https://www.twilio.com/quest/) - is a gamified way to teach yourself the basics of programming.
-
-</details>
 
