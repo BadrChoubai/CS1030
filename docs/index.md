@@ -35,10 +35,8 @@ If there's anything you're struggling to learn or are curious about, feel free t
 - [DenHac](https://denhac.org/) is Denver's local hackerspace, they regularly host a variety of events with like Chill Code Night and their monthly Quantum Computing meetup.
 
 <details>
-<summary>
-	<h3>Extra Resources</h3>
-</summary>
-<br>
+
+<summary><h3>Extra Resources</h3></summary>
 
 ### Podcasts 
 
