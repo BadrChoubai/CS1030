@@ -27,7 +27,7 @@ The Problem:
 
 
 def get_user_input(prompts: list) -> list:
-    prompt_answers: list  = [] 
+    prompt_answers: list = []
 
     for prompt_message in prompts:
         answer = input(f"{ prompt_message }: ")
@@ -86,4 +86,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

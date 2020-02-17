@@ -26,7 +26,6 @@ The Problem:
 """
 
 
-
 def get_user_input(prompts: list) -> list:
     prompt_answers: list = []
 
@@ -41,7 +40,7 @@ def main():
     prompts: list = ["Enter miles travelled",
                      "Gallons of fuel used? "]
 
-    miles, gallons = get_user_input(prompts) 
+    miles, gallons = get_user_input(prompts)
 
     kilometers = (miles * 1.60934)
     liters = (gallons * 3.7854)
