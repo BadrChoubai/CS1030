@@ -24,9 +24,15 @@ class TestProblemOne(unittest.TestCase):
 
         self.assertEqual(actual, expected)
 
-    def xtest_get_user_input(self):
-        pass
+    def test_get_user_input(self):
+        prompts: list = ['Question One', 'Question Two'] 
 
+        with patch('builtins.input') as mock_get_user_input:
+            mock_get_user_input.side_effect = ['1', '2']
+            result = problem_one.get_user_input(prompts)
+            assert result == [1, 2]
+            assert len(result) == len(prompts)
+        
     def test_inches_to_centimeters(self):
         actual = problem_one.inches_to_centimeters(64)
         expected = 162.56
