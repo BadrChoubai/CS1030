@@ -4,7 +4,7 @@
 
 This is a small project dedicated to giving students taking CS1030 a place to go to for useful resources.
  
-If there's anything you're struggling to learn or are curious about, feel free to talk to me during class or text me (720-470-5556)  and I can point you in the right direction.
+If there's anything you're struggling to learn or are curious about, feel free to talk to me during class and I can point you in the right direction.
 
 ## Resources 
 
