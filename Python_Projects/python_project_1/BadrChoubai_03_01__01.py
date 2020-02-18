@@ -47,7 +47,12 @@ def get_user_input(prompts: list) -> list:
 
     for prompt_message in prompts:
         answer = input(f"{ prompt_message }: ")
-        prompt_answers.append(int(answer.strip()))
+        try:
+            answer = int(answer)
+            prompt_answers.append(answer)
+        except ValueError:
+            print("Please double check you entered a number")
+            exit()
 
     return prompt_answers
 
