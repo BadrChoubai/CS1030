@@ -17,9 +17,18 @@
 
     2.9 Resume at step 2.1.
 """
+from random import choice
+
 
 def main():
-    pass
+    simulations = input("How many simulations would you like to run?: ")
+    simulations = int(simulations)
+    coin = ['H', 'T']
+
+    while simulations > 0:
+        print(choice(coin))
+        simulations -= 1
+
 
 if __name__ == "__main__":
-    main() 
+    main()
