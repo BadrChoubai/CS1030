@@ -18,6 +18,15 @@
 from re import match
 
 
+def points_for_letter_grade(letter_grade: str) -> float:
+    return {
+        'A+': 4.2, 'A': 4.0, 'A-': 3.9,
+        'B+': 3.7, 'B': 3.2, 'B-': 3.0,
+        'C+': 2.8, 'C': 2.2, 'C-': 2.0,
+        'D+': 1.8, 'D': 1.2, 'F': 0,
+    }[letter_grade]
+
+
 def is_valid_letter_grade(letter_grade: str) -> bool:
     valid_grade_re = r'^[A-D,F][-+]?$'
     return match(valid_grade_re, letter_grade)
