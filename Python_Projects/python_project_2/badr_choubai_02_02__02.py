@@ -10,6 +10,9 @@
     # 2.5 Count flips and check for HHH or TTT.
 
     2.6 When you get HHH or TTT, print the flips in the current simulation and accumulate the number of flips, minimum number of flips to get three in a row and the highest number of flips to get three in a row. The flips should be displayed with Hs and Ts with a space between each flip, like H T T H H H
+        
+    choice = 'H' or 'T'    
+    Something like ''.join(f'{ choice } ') 
 
     2.7 Go on to the next simulation, if there is one.
 
