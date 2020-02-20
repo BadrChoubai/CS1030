@@ -12,15 +12,15 @@ Due Date: 2020 / 18 / 02
 Problem 1:
 
 - Convert a user's given height to meters
-	- [Code](./badrchoubai_03_01__01.py)
+	- [Code](./badrchoubai_02_01__01.py)
 	- [Tests](./test_badrchoubai_03_01__01.py)
 
 Problem 2:
 
 - Convert Miles per Gallon (mpg) to Liters per Kilometer (lpk)
-	- [Code](/badrchoubai_03_01__02.py)
+	- [Code](/badrchoubai_02_01__02.py)
 
 Problem 3:
 
 - Given the input of a space on a checkboard, return the spaces color
-	- [Code](/badrchoubai_03_01__03.py)
+	- [Code](/badrchoubai_02_01__03.py)
