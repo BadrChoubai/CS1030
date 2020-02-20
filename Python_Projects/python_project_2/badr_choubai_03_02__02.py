@@ -20,7 +20,7 @@
 from random import choice
 
 
-def valid_series(series: list) -> bool:
+def is_valid_series(series: list) -> bool:
     series = ''.join(series)
 
     valid = ('TTT' in series or 'HHH' in series)
@@ -30,25 +30,31 @@ def valid_series(series: list) -> bool:
 def main():
     simulations = input("How many simulations would you like to run?: ")
     simulations = int(simulations)
+    print(f"\nSimulations to run: { simulations } ")
     coin = ['H', 'T']
+    flips = 0
     series = []
 
     while simulations > 0:
-        print("outer while loop")
+        print("while: simulations > 0\n")
         while len(series) < 3:
-            print("Inner while loop")
+            print("while: len(series) < 3")
             series.append(choice(coin))
-            print(series)
+            flips += 1
 
-        if valid_series(series):
-            print("If in inner while loop")
+        print(series)
+        simulations -= 1
+
+        if is_valid_series(series):
+            print("if: is_valid_series?")
+            print(f"Flips: { flips }")
+            print(f"Simulations left: { simulations }")
             series.clear()
             break
         else:
-            print("Else in inner while loop")
+            print("else")
             series.clear()
-
-        simulations -= 1
+            continue
 
 
 if __name__ == "__main__":
