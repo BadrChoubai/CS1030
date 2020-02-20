@@ -69,8 +69,8 @@ def main():
 
     [letter, number] = get_user_input(prompts)
 
-    letter_range = list(map(chr, range(97, 105)))
-    number_range = [i for i in range(1, 9)]
+    letter_range = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'] 
+    number_range = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
     if letter in letter_range and int(number) in number_range:
         color = find_color(letter, number)
