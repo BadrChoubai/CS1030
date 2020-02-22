@@ -10,7 +10,7 @@
     1.5 If the user enters a blank line, calculate and print the GPA for the grades just entered. Your program should correctly handle the case where the user enters no grades. In that case, print “No GPA calculated” and resume at step 1.2.
 
     1.6 Calculate and print the overall average of all GPAs that were processed. 
-        - Overall Average = Sum of all points / Number of grades preocessed
+        - Overall Average = Sum of all points / Number of grades processed
 
     Regex Pattern for letter Grade
     https://regex101.com/r/uvsEdU/3
