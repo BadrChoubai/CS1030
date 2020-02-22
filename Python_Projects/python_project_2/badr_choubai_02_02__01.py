@@ -7,15 +7,25 @@
 
     # 1.4 Here, the user entered a valid grade. Using a list or a series of if-elif-else statements, translate the grade to points and accumulate the total points and the count so you can calculate an overall average later. Prompt for the next grade.
 
-    1.5 If the user enters a blank line, calculate and print the GPA for the grades just entered. Your program should correctly handle the case where the user enters no grades. In that case, print “No GPA calculated” and resume at step 1.2.
+    # 1.5 If the user enters a blank line, calculate and print the GPA for the grades just entered. Your program should correctly handle the case where the user enters no grades. In that case, print “No GPA calculated” and resume at step 1.2.
 
-    1.6 Calculate and print the overall average of all GPAs that were processed. 
+    # 1.6 Calculate and print the overall average of all GPAs that were processed. 
         - Overall Average = Sum of all points / Number of grades processed
 
     Regex Pattern for letter Grade
     https://regex101.com/r/uvsEdU/3
 """
+from functools import reduce
 from re import match
+
+
+def calculate_points(grade_input_stream: list, scores: dict) -> int:
+    points = 0
+
+    for lg in grade_input_stream:
+        points += scores[lg]
+
+    return points
 
 
 """is_valid_letter_grade
@@ -35,27 +45,34 @@ scores = {
     'D+': 1.8, 'D': 1.2,
 }
 
-score_counter = {
-    'A+': 0, 'A': 0, 'A-': 0,
-    'B+': 0, 'B': 0, 'B-': 0,
-    'C+': 0, 'C': 0, 'C-': 0,
-    'D+': 0, 'D': 0,
-}
+grade_input_stream: list = []
 
 
 def main():
+    grades_processed = 0
+    total_points = 0
+
     while True:
         grade_input = input("Give me a letter grade: ")
 
         if grade_input == 'quit':
-            print('Quit')
+            print('Calculating GPA for all entries')
+            print(f'Overall GPA: { total_points / grades_processed }')
             break
         elif grade_input == '':
-            print('no input')
+            print('Calculating GPA for latest entry...')
+            points = calculate_points(grade_input_stream, scores)
+            if points == 0:
+                print("No GPA calculated.")
+            else:
+                print(f"Points in current entry: {points}")
+                grades_processed += 1
+                total_points += points
+                grade_input_stream.clear()
             continue
         else:
             if is_valid_letter_grade(grade_input):
-                score_counter[grade_input] += 1
+                grade_input_stream.append(grade_input)
             else:
                 print("Please input a valid letter grade. Fs are ignored")
 
