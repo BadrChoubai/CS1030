@@ -37,11 +37,10 @@ def is_valid_series(series: list) -> bool:
 
 
 def print_series_results(flips_total: int, series: list):
-    results_str = ''.join(series)
     print(f"""
     Flips Total: { flips_total };
-    Triplet String: { ''.join(series[-3:]) }
-    Results String: { results_str } 
+    Triplet String: { ''.join(series) }
+    Results String: TODO
     """)
 
 
