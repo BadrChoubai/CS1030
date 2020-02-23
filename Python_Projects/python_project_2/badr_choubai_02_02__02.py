@@ -53,7 +53,7 @@ def main():
     flips_total = 0
     series: list = []
 
-    while simulations >= 0:
+    while simulations > 0:
 
         while len(series) < 3:
             series.append(flip_coin())
