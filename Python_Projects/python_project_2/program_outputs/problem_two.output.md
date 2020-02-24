@@ -1,3 +1,4 @@
+```bash
 Script started on Mon Feb 24 13:27:20 2020
 
 How many coin flipping simulations would you like to run?: 8 
@@ -43,3 +44,4 @@ How many coin flipping simulations would you like to run?: 8
 How many coin flipping simulations would you like to run?:
 
 Script done on Mon Feb 24 13:27:44 2020
+```
