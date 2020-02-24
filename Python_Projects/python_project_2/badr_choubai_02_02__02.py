@@ -34,11 +34,11 @@ def is_valid_series(section: str) -> bool:
     return valid
 
 
-def print_series_results(flips_in_series: int, series: str):
+def print_series_results(result: dict):
     print(f'''
-    Flips In Series: { flips_in_series };
-    Triplet String:  { series[-3:] };
-    Results String: { series.replace('', ' ', len(series)) }; 
+    Flips In Series: { result['flips'] };
+    Triplet String:  { result['series_string'][-3:] };
+    Results String: { result['series_string'].replace('', ' ', len(result['series_string'])) }; 
     ''')
 
 
@@ -47,16 +47,19 @@ def main():
         "How many coin flipping simulations would you like to run?: ")
     simulations = int(simulations)
     flips_total = 0
+    simulation_results: list = []
 
     while simulations > 0:
-        series_str = ""
-        flips_in_series = 0
-        while not is_valid_series(series_str[-3:]):
-            series_str += flip_coin()
-            flips_in_series += 1
+        simulation_result = {
+            'flips': 0,
+            'series_string': ''
+        }
+        while not is_valid_series(simulation_result['series_string'][-3:]):
+            simulation_result['series_string'] += flip_coin()
+            simulation_result['flips'] += 1
 
-        print_series_results(flips_in_series, series_str)
-        flips_total += flips_in_series
+        print_series_results(simulation_result)
+        simulation_results.append(simulation_result)
         simulations -= 1
 
     print(f"Total Flips in Simulation: { flips_total }")
