@@ -28,12 +28,12 @@ def calculate_points(grade_input_stream: list, scores: dict) -> int:
     return points
 
 
-"""is_valid_letter_grade
-This method implements a regex pattern to check that the letter grade input by the user is valid
-"""
 
 
 def is_valid_letter_grade(letter_grade: str) -> bool:
+    """is_valid_letter_grade
+    This method implements a regex pattern to check that the letter grade input by the user is valid
+    """
     valid_grade_re = r'^[A-D][-+]?$'
     return match(valid_grade_re, letter_grade)
 
