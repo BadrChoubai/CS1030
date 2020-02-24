@@ -1,4 +1,4 @@
-# Python Project 1
+# Python Project 2
 
 Professor: Dr. Kramer \
 Project Description: Write the solutions for the three problems given. \
