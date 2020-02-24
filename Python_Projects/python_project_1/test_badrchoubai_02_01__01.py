@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 
-import badrchoubai_03_01__01 as problem_one
+import BadrChoubai_02_01__01 as problem_one
 
 
 class TestProblemOne(unittest.TestCase):
@@ -25,7 +25,7 @@ class TestProblemOne(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def test_get_user_input(self):
-        prompts: list = ['Question One', 'Question Two'] 
+        prompts: list = ['Question One', 'Question Two']
 
         with patch('builtins.input') as mock_get_user_input:
             mock_get_user_input.side_effect = ['1', '2']
@@ -33,9 +33,9 @@ class TestProblemOne(unittest.TestCase):
 
             assert result == [1, 2]
 
-            # assert that for each input there is an output 
+            # assert that for each input there is an output
             assert len(result) == len(prompts)
-            
+
             # assert that output type is correct
             assert type(result[0]) == int
 
@@ -48,12 +48,3 @@ class TestProblemOne(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-"""
-    from unittest.mock import patch
-    
-    with patch('__main__.input') as mock_input:
-        mock_input.side_effect = ['1','2','3']
-        result = get_user_input(['one','two','three'])
-        assert result == [3,4,5]
-"""
