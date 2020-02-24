@@ -13,7 +13,7 @@
 """
 
 import unittest
-import badr_choubai_03_02__01 as problem_one
+import badr_choubai_02_02__01 as problem_one
 import random
 
 
