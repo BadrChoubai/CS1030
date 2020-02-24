@@ -10,13 +10,12 @@ Due Date: 2020 / 03 / 03
 ### Solutions
 
 Problem 1:
+Write a program that converts a list of letter grades entered by a user to a GPA for several GPA calculations. Also calculate the overall GPA for all grades entered.
 
-- Calculate GPA  
-	- [Code](./badrchoubai_02_02__01.py)
-	- [Tests](./test_badrchoubai_02_02__01.py)
+- [Code](badr_choubai_02_02__01.py)
+- [Tests](test_badr_choubai_02_02__01.py)
 
 Problem 2:
+You will simulate the tossing of a coin and find the average number of flips, the minimum number of flips and the maximum number of flips in all simulations. 
 
-- Coin Flip Simulations 
-	- [Code](./badrchoubai_02_02__02.py)
-
+- [Code](badr_choubai_02_02__02.py)
