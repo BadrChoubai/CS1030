@@ -35,10 +35,11 @@ def is_valid_series(section: str) -> bool:
 
 
 def print_series_results(result: dict):
+    flips, series_string = result['flips'], result['series_string']
     print(f'''
-    Flips In Series: { result['flips'] };
-    Triplet String:  { result['series_string'][-3:] };
-    Results String: { result['series_string'].replace('', ' ', len(result['series_string'])) }; 
+    Flips In Series: { flips };
+    Triplet String:  { series_string[-3:] };
+    Results String: { series_string.replace('', ' ', len(series_string)) }; 
     ''')
 
 
@@ -60,6 +61,7 @@ def main():
 
         print_series_results(simulation_result)
         simulation_results.append(simulation_result)
+        flips_total += simulation_result['flips']
         simulations -= 1
 
     print(f"Total Flips in Simulation: { flips_total }")
