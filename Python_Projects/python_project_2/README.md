@@ -19,5 +19,5 @@ Write a program that converts a list of letter grades entered by a user to a GPA
 Problem 2:
 You will simulate the tossing of a coin and find the average number of flips, the minimum number of flips and the maximum number of flips in all simulations. 
 
-- [Specifications](specifications/problem_one.specs.md)
+- [Specifications](specifications/problem_two.specs.md)
 - [Code](badr_choubai_02_02__02.py)
