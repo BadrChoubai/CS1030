@@ -4,7 +4,6 @@ Professor: David Kramer
 Class: CS 1030
 Project: Python Project Two
 '''
-from re import match
 
 
 def calculate_points(grade_input_stream: list, scores: dict) -> int:
