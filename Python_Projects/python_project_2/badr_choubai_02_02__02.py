@@ -40,9 +40,9 @@ def is_valid_series(section: str) -> bool:
 def series_results(result: dict) -> str:
     '''
     Args:
-        result (dict): result from coin flipping simulation
+        result (dict): result from coin flipping series
     Returns:
-        Formatted string with simulation statistics
+        Formatted string with series statistics
     '''
     flips, series_string = result.values()
     return f'''
@@ -52,8 +52,14 @@ def series_results(result: dict) -> str:
     '''
 
 
-def simulation_statistics(flips_results: list) -> str:
-    (minimum, average, maximum) = calculate_end_results(flips_results)
+def simulation_statistics(flip_results: list) -> str:
+    '''
+    Args:
+        flip_results (list): flip results from all simulations
+    Returns:
+        Formatted string with simulation statistics 
+    '''
+    (minimum, average, maximum) = calculate_end_results(flip_results)
     return f'''
     Statistics on finding valid Triplet:
 
@@ -72,7 +78,7 @@ def main():
     else:
         exit()
 
-    flips_results: list = []
+    flip_results: list = []
     while simulations > 0:
         simulation_result = {
             'flips': 0,
@@ -83,10 +89,10 @@ def main():
             simulation_result['flips'] += 1
 
         print(series_results(simulation_result))
-        flips_results.append(simulation_result['flips'])
+        flip_results.append(simulation_result['flips'])
         simulations -= 1
 
-    print(simulation_statistics(flips_results))
+    print(simulation_statistics(flip_results))
     main()
 
 
