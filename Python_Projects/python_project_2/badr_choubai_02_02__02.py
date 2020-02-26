@@ -18,22 +18,49 @@ def calculate_end_results(flips_results: list) -> tuple:
 
 
 def flip_coin() -> str:
+    '''
+    Returns:
+        choice (str): return random selection of value in coin
+    '''
     coin = ('H', 'T')
     return choice(coin)
 
 
 def is_valid_series(section: str) -> bool:
+    '''
+    Args:
+        section (str): section of string to validate
+    Returns:
+        valid (bool): boolean of whether or not valid triplet ('HHH' or 'TTT') was found
+    '''
     valid = ('TTT' in section or 'HHH' in section)
     return valid
 
 
-def print_series_results(result: dict):
+def series_results(result: dict) -> str:
+    '''
+    Args:
+        result (dict): result from coin flipping simulation
+    Returns:
+        Formatted string with simulation statistics
+    '''
     flips, series_string = result.values()
-    print(f'''
+    return f'''
     Flips In Series: { flips };
     Triplet String:  { series_string[-3:] };
     Results String: { series_string.replace('', ' ', len(series_string)) }; 
-    ''')
+    '''
+
+
+def simulation_statistics(flips_results: list) -> str:
+    (minimum, average, maximum) = calculate_end_results(flips_results)
+    return f'''
+    Statistics on finding valid Triplet:
+
+    Minimum Number of Flips: { minimum };
+    Average Number of Flips: { average };
+    Maximum Number of Flips: { maximum };
+    '''
 
 
 def main():
@@ -55,18 +82,11 @@ def main():
             simulation_result['series_string'] += flip_coin()
             simulation_result['flips'] += 1
 
-        print_series_results(simulation_result)
+        print(series_results(simulation_result))
         flips_results.append(simulation_result['flips'])
         simulations -= 1
 
-    minimum, average, maximum = calculate_end_results(flips_results)
-    print(f"""
-    Statistics on finding valid Triplet:
-
-    Minimum Number of Flips: { minimum };
-    Average Number of Flips: { average };
-    Maximum Number of Flips: { maximum };
-    """)
+    print(simulation_statistics(flips_results))
     main()
 
 
