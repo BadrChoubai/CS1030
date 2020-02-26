@@ -17,6 +17,3 @@ def calculations():
     Product -> { product }
     Sum -> { _sum }
     """)
-
-
-calculations()

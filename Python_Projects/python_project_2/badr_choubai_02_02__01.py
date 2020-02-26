@@ -4,14 +4,13 @@ Professor: David Kramer
 Class: CS 1030
 Project: Python Project Two
 """
-from functools import reduce
 from re import match
 
 
 def calculate_points(grade_input_stream: list, scores: dict) -> int:
     """
     Args:
-        grade_input_stream: user input grade
+        grade_input_stream: user input grades
         scores: scores to match grades against
     Returns:
         points: All points after calculation
