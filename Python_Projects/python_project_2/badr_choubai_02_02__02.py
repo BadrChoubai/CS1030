@@ -8,12 +8,18 @@ from functools import reduce
 from random import choice
 
 
-def calculate_end_results(flips_results: list) -> tuple:
+def calculate_end_results(flip_results: list) -> tuple:
+    '''
+    Args:
+        flip_results (list): flip results from all simulations
+    Returns:
+        (tuple) of calculated minimum, average and maximum
+    '''
     def _sum(x, y): return x + y
 
-    minimum = min(flips_results)
-    average = reduce(_sum, flips_results) // len(flips_results)
-    maximum = max(flips_results)
+    minimum = min(flip_results)
+    average = reduce(_sum, flip_results) // len(flip_results)
+    maximum = max(flip_results)
     return (minimum, average, maximum)
 
 
