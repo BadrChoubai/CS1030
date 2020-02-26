@@ -6,23 +6,23 @@ Project: Python Project One
 """
 
 
-def get_user_input(prompts: list) -> list:
-    prompt_answers: list = []
-
-    for prompt_message in prompts:
-        answer = input(f"{ prompt_message }: ")
-        prompt_answers.append(answer.strip())
-
-    return prompt_answers
+def find_color(coordinate: tuple) -> str:
+    coordinate = ord(coordinate[0]) + int(coordinate[1])
+    return "Black" if coordinate % 2 == 0 else "Red"
 
 
-def find_color(letter, number):
-    coordinate = ord(letter) + int(number)
+def is_valid_coordinate(coordinate: tuple) -> bool:
+    coordinate_letter = coordinate[0] if coordinate[0].isalpha() else None
+    coordinate_number = coordinate[1] if coordinate[1].isdigit() else None
 
-    if coordinate % 2 == 0:
-        return "Black"
-    else:
-        return "White"
+    return [coordinate_letter, coordinate_number]
+
+
+def in_range(coordinate: tuple) -> bool:
+    letter_range = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+    number_range = [1, 2, 3, 4, 5, 6, 7, 8]
+
+    return coordinate[0] in letter_range and int(coordinate[1]) in number_range
 
 
 def print_intro():
@@ -44,24 +44,15 @@ def print_intro():
 def main():
     print_intro()
 
-    prompts: list = ["Give me a letter from a-h",
-                     "Give me a number from 1-8"]
+    coordinate = input("Give me a coordinate (a-h)(1-8) -> ")
+    coordinate = (coordinate[0], coordinate[1])
 
-    [letter, number] = get_user_input(prompts)
-
-    letter_range = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-    number_range = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-    if letter in letter_range and int(number) in number_range:
-        color = find_color(letter, number)
-        output_str = f"Tile {letter}{number} is {color}"
-
-        print(output_str)
-
+    letter, number = is_valid_coordinate(coordinate)
+    if letter and number and in_range(coordinate):
+        color = find_color(coordinate)
+        print(f"Square { letter }{ number } is { color }")
     else:
-        error = str(
-            "Double check that the values you entered are in the correct range.")
-        print(error)
+        print("Double check that you input a valid coordinate.")
 
 
 if __name__ == "__main__":
