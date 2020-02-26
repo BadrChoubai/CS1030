@@ -1,20 +1,20 @@
-"""
+'''
 Name: Badr Choubai
 Professor: David Kramer
 Class: CS 1030
 Project: Python Project Two
-"""
+'''
 from re import match
 
 
 def calculate_points(grade_input_stream: list, scores: dict) -> int:
-    """
+    '''
     Args:
         grade_input_stream: user input grades
         scores: scores to match grades against
     Returns:
         points: All points after calculation
-    """
+    '''
     points = 0
 
     for lg in grade_input_stream:
@@ -24,13 +24,13 @@ def calculate_points(grade_input_stream: list, scores: dict) -> int:
 
 
 def is_valid_letter_grade(letter_grade: str) -> bool:
-    """
+    '''
     Args:
         letter_grade: letter grade input from user
     Returns:
         True if letter_grade in letter_score
         False if not letter_grade in letter_score
-    """
+    '''
     letter_grades = {'A', 'B', 'C', 'D', 'F',
                      'A+', 'A-', 'B+', 'B-', 'C+', 'C-', 'D+'}
     return letter_grade in letter_grades
@@ -50,7 +50,7 @@ def main():
     grade_input_stream: list = []
 
     while True:
-        grade_input = input("Give me a letter grade: ")
+        grade_input = input('Give me a letter grade: ')
 
         if grade_input == 'quit':
             print('Calculating GPA for all entries')
@@ -61,9 +61,9 @@ def main():
             print('Calculating GPA for latest entry...')
             points = calculate_points(grade_input_stream, scores)
             if points == 0:
-                print("No GPA calculated.")
+                print('No GPA calculated.')
             else:
-                print(f"Points in current entry: {points:.2f}")
+                print(f'Points in current entry: {points:.2f}')
                 grades_processed += 1
                 total_points += points
                 grade_input_stream.clear()
@@ -72,8 +72,8 @@ def main():
             if is_valid_letter_grade(grade_input):
                 grade_input_stream.append(grade_input)
             else:
-                print("Please input a valid letter grade.")
+                print('Please input a valid letter grade.')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

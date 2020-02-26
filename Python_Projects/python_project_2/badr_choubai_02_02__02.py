@@ -1,9 +1,9 @@
-"""
+'''
 Name: Badr Choubai
 Professor: David Kramer
 Class: CS 1030
 Project: Python Project Two
-"""
+'''
 from functools import reduce
 from random import choice
 
@@ -77,7 +77,7 @@ def simulation_statistics(flip_results: list) -> str:
 
 def main():
     simulations = input(
-        "How many coin flipping simulations would you like to run?: ")
+        'How many coin flipping simulations would you like to run?: ')
 
     if simulations.isdigit() and int(simulations) > 0:
         simulations = int(simulations)
@@ -102,5 +102,5 @@ def main():
     main()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
