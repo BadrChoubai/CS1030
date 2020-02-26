@@ -4,7 +4,6 @@ Professor: David Kramer
 Class: CS 1030
 Project: Python Project Two
 """
-from functools import reduce
 from re import match
 
 
