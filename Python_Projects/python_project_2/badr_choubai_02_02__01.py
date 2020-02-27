@@ -35,18 +35,18 @@ def is_valid_letter_grade(letter_grade: str) -> bool:
     return letter_grade in letter_grades
 
 
-scores = {
-    'A+': 4.2, 'A': 4.0, 'A-': 3.9,
-    'B+': 3.7, 'B': 3.2, 'B-': 3.0,
-    'C+': 2.8, 'C': 2.2, 'C-': 2.0,
-    'D+': 1.8, 'D': 1.2, 'F': 0,
-}
 
 
 def main():
+    grade_input_stream = []
     grades_processed = 0
+    scores = {
+        'A+': 4.2, 'A': 4.0, 'A-': 3.9,
+        'B+': 3.7, 'B': 3.2, 'B-': 3.0,
+        'C+': 2.8, 'C': 2.2, 'C-': 2.0,
+        'D+': 1.8, 'D': 1.2, 'F': 0,
+    }
     total_points = 0
-    grade_input_stream: list = []
 
     while True:
         grade_input = input('Give me a letter grade: ')
