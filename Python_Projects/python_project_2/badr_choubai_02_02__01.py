@@ -27,8 +27,8 @@ def is_valid_letter_grade(letter_grade: str) -> bool:
     Args:
         letter_grade: letter grade input from user
     Returns:
-        True if letter_grade in letter_score
-        False if not letter_grade in letter_score
+        True if letter_grade in letter_grades
+        False if not letter_grade in letter_grades
     '''
     letter_grades = {'A', 'B', 'C', 'D', 'F',
                      'A+', 'A-', 'B+', 'B-', 'C+', 'C-', 'D+'}
