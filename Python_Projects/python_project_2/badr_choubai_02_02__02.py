@@ -46,9 +46,9 @@ def is_valid_series(section: str) -> bool:
 def series_results(result: dict) -> str:
     '''
     Args:
-        result (dict): result from coin flipping series
+        result (dict): results for one coin flipping simulation 
     Returns:
-        Formatted string with series statistics
+        Formatted string with simulation statistics
     '''
     flips, series_string = result.values()
     return f'''
@@ -82,6 +82,7 @@ def main():
     if simulations.isdigit() and int(simulations) > 0:
         simulations = int(simulations)
     else:
+        print("Invalid input")
         exit()
 
     flip_results: list = []
