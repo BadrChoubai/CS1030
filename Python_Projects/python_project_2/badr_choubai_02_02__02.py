@@ -26,7 +26,7 @@ def calculate_end_results(flip_results: list) -> tuple:
 def flip_coin() -> str:
     '''
     Returns:
-        choice (str): return random selection of value in coin
+        choice: return random selection of value in coin
     '''
     coin = ('H', 'T')
     return choice(coin)
@@ -35,9 +35,9 @@ def flip_coin() -> str:
 def is_valid_series(section: str) -> bool:
     '''
     Args:
-        section (str): section of string to validate
+        section: section of string to validate
     Returns:
-        valid (bool): boolean of whether or not valid triplet ('HHH' or 'TTT') was found
+        valid: boolean of whether or not valid triplet ('HHH' or 'TTT') was found
     '''
     valid = ('TTT' in section or 'HHH' in section)
     return valid
