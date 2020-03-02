@@ -11,7 +11,7 @@ from random import choice
 def calculate_end_results(flip_results: list) -> tuple:
     '''
     Args:
-        flip_results (list): flip results from all simulations
+        flip_results: flip results from all simulations
     Returns:
         (tuple) of calculated minimum, average and maximum
     '''
@@ -46,7 +46,7 @@ def is_valid_series(section: str) -> bool:
 def series_results(result: dict) -> str:
     '''
     Args:
-        result (dict): results for one coin flipping simulation 
+        result: results for one coin flipping simulation 
     Returns:
         Formatted string with simulation statistics
     '''
@@ -61,7 +61,7 @@ def series_results(result: dict) -> str:
 def simulation_statistics(flip_results: list) -> str:
     '''
     Args:
-        flip_results (list): flip results from all simulations
+        flip_results: flip results from all simulations
     Returns:
         Formatted string with simulation statistics 
     '''
