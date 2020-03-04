@@ -11,9 +11,9 @@ def calculate_gpa(scores: [float]) -> float:
     Args:
         scores: all scores accumulated during input
     Returns:
-        calculated GPA
+        calculated GPA or None
     '''
-    return round(sum(scores) / len(scores), 2)
+    return round(sum(scores) / len(scores), 2) if len(scores) > 0 else 0 
 
 
 def is_valid_letter_grade(letter_grade: str) -> bool:
@@ -42,8 +42,26 @@ def score_for_letter_grade(letter_grade: str) -> float:
 
 
 def main():
-    pass
+    all_scores = []
+    series_scores = []
 
+    while True:
+        grade_input = input("Enter a letter grade: ")
+
+        if is_valid_letter_grade(grade_input):
+            series_scores.append(score_for_letter_grade(grade_input))
+        elif grade_input == 'quit':
+            all_scores += series_scores
+            overall_gpa = calculate_gpa(all_scores)
+            print(f'Overall GPA: { overall_gpa }') if overall_gpa > 0 else print('No GPA calculated')
+            break
+        elif grade_input == '':
+            latest_gpa = calculate_gpa(series_scores)
+            all_scores += series_scores
+            print(f'GPA for latest entries { latest_gpa }') if latest_gpa > 0 else print('No GPA calculated')
+        else:
+            print("Please enter a valid letter grade.")
+        
 
 if __name__ == "__main__":
     main()
