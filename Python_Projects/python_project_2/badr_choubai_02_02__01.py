@@ -59,6 +59,7 @@ def main():
         elif grade_input == '':
             latest_gpa = calculate_gpa(series_scores)
             all_scores += series_scores
+            series_scores.clear()
             print(f'GPA for latest entries { latest_gpa }') if latest_gpa > 0 else print(
                 'No GPA calculated')
         else:
