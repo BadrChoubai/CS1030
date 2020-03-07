@@ -43,23 +43,23 @@ def score_for_letter_grade(letter_grade: str) -> float:
 
 def main():
     all_scores = []
-    series_scores = []
+    latest_scores = []
 
     while True:
         grade_input = input("Enter a letter grade: ")
 
         if is_valid_letter_grade(grade_input):
-            series_scores.append(score_for_letter_grade(grade_input))
+            latest_scores.append(score_for_letter_grade(grade_input))
         elif grade_input == 'quit':
-            all_scores += series_scores
+            all_scores += latest_scores
             overall_gpa = calculate_gpa(all_scores)
             print(f'Overall GPA: { overall_gpa }') if overall_gpa > 0 else print(
                 'No GPA calculated')
             break
         elif grade_input == '':
-            latest_gpa = calculate_gpa(series_scores)
-            all_scores += series_scores
-            series_scores.clear()
+            latest_gpa = calculate_gpa(latest_scores)
+            all_scores += latest_scores
+            latest_scores.clear()
             print(f'GPA for latest entries { latest_gpa }') if latest_gpa > 0 else print(
                 'No GPA calculated')
         else:
