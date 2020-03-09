@@ -46,7 +46,7 @@ def main():
     all_score_entries = []
 
     while True:
-        grade_input = input("Enter a letter grade: ")
+        grade_input = input("Enter a letter grade: ").strip()
 
         if is_valid_letter_grade(grade_input):
             latest_score_entries.append(score_for_letter_grade(grade_input))
