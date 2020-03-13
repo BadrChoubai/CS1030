@@ -19,7 +19,7 @@ def display_results(results: tuple) -> None:
     above_average, equal_to_average, below_average = results[0].values()
     calculated_average = results[1]
     print(f'''
-    Calculated Average -> { calculated_average }
+    Calculated Average -> {calculated_average:.2f}
     Numbers above calculated average -> { above_average }
     Numbers equal to the calculated average -> { equal_to_average }
     Numbers below calculated average -> { below_average }
