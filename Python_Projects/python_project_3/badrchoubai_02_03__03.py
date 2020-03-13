@@ -15,7 +15,8 @@ def print_search_results(results: tuple) -> None:
     for i, _ in enumerate(provinces):
         provinces[i] = provinces[i].replace('_', ' ').title()
 
-    print(f'''The Province Code you entered is for a { province_type } area in { ' or the '.join(provinces) }''') 
+    print(
+        f'The Province Code you entered is for a { province_type } area in { " or the ".join(provinces) }')
 
 
 def is_valid_province_code(postal_code_input: str) -> bool:
@@ -67,4 +68,3 @@ while True:
     elif is_valid_province_code(province_code_input):
         print_search_results(search_provinces(province_code_input))
         continue
-    
