@@ -8,19 +8,19 @@ If there's anything you're struggling to learn or are curious about, reach out t
 
 His Office Hours Are:
 
-| Days      | Times			 |
-| --------- | -------------- |
-| Monday    | 12:00 to 14:00 |
-| Wednesday | 12:00 to 13:00 |
-| Thursday  | 12:00 to 14:00 |
-
-I'd also like to offer my free time to help you learn so don't hesitate to ask me questions.
+| Days      | Times			  |
+| --------- | --------------- |
+| Monday    | 08:00 - 15:45 |
+| Tuesday   | 08:00 - 13:45 & 16:00 - 17:45 |
+| Wednesday | 08:00 - 15:45 |
+| Thursday  | 08:00 - 13:45 & 16:00 - 17:45 |
+| Friday    | Available on Teams but no set schedule |
 
 ## Resources 
 
 ### Python
 
-- [Corey Schafer](https://www.youtube.com/user/schafer5/featured) - Corey Schafer's YouTube channel was one of the first channels I found when starting to learn Python. He has videos on other topics such as Data Visualization and Building a full stack application in Django (think, Ruby on Rails). 
+- [Corey Schafer](https://www.youtube.com/user/schafer5/featured) - Corey Schafer's YouTube channel was one of the first channels I found when starting to learn Python. He has videos on other topics such as data visualization and building a full stack application in Django (think, Ruby on Rails). 
 - [Derek Banas' - Getting Started with Python](https://www.youtube.com/watch?v=H1elmMBnykA) - Derek Banas' YouTube channel has proven to be extremely useful for learning not only Python but a lot of other programming languages and concepts.
 - [Real Python](https://realpython.com/) - A blog site with useful Python tutorials and articles on various topics in Python. They also have a YouTube channel to subscribe to, if you're more of a visual learner.
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
@@ -42,5 +42,5 @@ I'd also like to offer my free time to help you learn so don't hesitate to ask m
 
 ### Miscellaneous?
 
-- [Developer Roadmaps](https://roadmap.sh/) - is useful for getting a quick overview for what you need to learn whether you want to do Front-end development or Back-end development
+- [Developer Roadmaps](https://roadmap.sh/) - is useful for getting a quick overview for what you need to learn whether you want to do front-end development or back-end development
 
