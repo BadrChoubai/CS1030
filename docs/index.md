@@ -10,10 +10,8 @@ His Office Hours Are:
 
 | Days      | Times			  |
 | --------- | --------------- |
-| Monday    | 08:00 - 15:45 |
-| Tuesday   | 08:00 - 13:45 & 16:00 - 17:45 |
-| Wednesday | 08:00 - 15:45 |
-| Thursday  | 08:00 - 13:45 & 16:00 - 17:45 |
+| Mondays and Wednesdays   | 08:00am - 03:45pm |
+| Tuesdays and Thursdays   | 08:00am - 01:45pm & 04:00pm - 05:45pm |
 | Friday    | Available on Teams but no set schedule |
 
 ## Resources 
