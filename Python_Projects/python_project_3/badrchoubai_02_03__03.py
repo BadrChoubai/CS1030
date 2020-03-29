@@ -26,9 +26,9 @@ def is_valid_province_code(postal_code_input: str) -> bool:
     '''
     # if postal code starts with one of these letters it will be invalid
     invalid_letters = {'D', 'F', 'I', 'O', 'Q', 'U', 'W', 'Z'}
-    valid_length = True if len(postal_code_input) == 7 else False
-    valid_format = True if postal_code_input[3] == ' ' else False
-    valid_letter = True if postal_code_input[0] not in invalid_letters else False
+    valid_length = len(postal_code_input) == 7
+    valid_format = postal_code_input[3] == ' '
+    valid_letter = postal_code_input[0] not in invalid_letters
 
     return valid_length and valid_format and valid_letter
 
