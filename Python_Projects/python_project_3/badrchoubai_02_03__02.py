@@ -4,50 +4,57 @@ Professor: David Kramer
 Class: CS 1030
 Project: Python Project Three
 
-Part of the specifications states to allow for the possibility that there are no numbers below 
-the average and/or no numbers above the average. so a question asked is. 
+Part of the specifications states to allow for the possibility that there are no numbers below
+the average and/or no numbers above the average. so a question asked is.
 
 What does that mean about the numbers in the list?
 '''
 
 
-def display_results(results: tuple) -> None:
-    '''display_results
-    This function takes a list of results and prints them in a 
-    prettified manner. 
-    '''
-    above_average, equal_to_average, below_average = results[0].values()
-    calculated_average = results[1]
-    print(f'''
-    Calculated Average -> {calculated_average:.2f}
-    Numbers above calculated average -> { above_average }
-    Numbers equal to the calculated average -> { equal_to_average }
-    Numbers below calculated average -> { below_average }
-    ''')
-
-
-def get_results(numbers: [int]) -> tuple:
+def calculate_results(numbers: [int]) -> tuple:
     '''calculate_results
     This method takes a list of integers and outputs per the problem specifications
     - All numbers that are above the calculated average.
-    - All numbers that equal the calculated average. 
+    - All numbers that equal the calculated average.
     - All numbers that are below the calculated average.
     '''
+    calculated_average = 0
     results = {
         'above_average': [],
         'equal_to_average': [],
         'below_average': [],
     }
-    calculated_average = sum(numbers) / len(numbers)
-    for number in numbers:
-        if number > calculated_average:
-            results['above_average'].append(number)
-        elif number == calculated_average:
-            results['equal_to_average'].append(number)
-        elif number < calculated_average:
-            results['below_average'].append(number)
 
-    return (results, calculated_average)
+    try:
+        calculated_average = sum(numbers) / len(numbers)
+
+        for number in numbers:
+            if number > calculated_average:
+                results['above_average'].append(number)
+            if number == calculated_average:
+                results['equal_to_average'].append(number)
+            if number < calculated_average:
+                results['below_average'].append(number)
+
+    except ZeroDivisionError:
+        print('No Average Calculated')
+
+    return (calculated_average, results)
+
+
+def display_results(results: tuple) -> None:
+    '''display_results
+    This function takes a list of results and prints them in a
+    prettified manner.
+    '''
+    calculated_average = round(results[0], 2)
+    above_average, equal_to_average, below_average = results[1].values()
+    print(f'''
+    Calculated Average -> {calculated_average or None}
+    Numbers above calculated average -> {', '.join(str(n) for n in above_average) or None}
+    Numbers equal to the calculated average -> {', '.join(str(n) for n in equal_to_average) or None}
+    Numbers below calculated average -> {', '.join(str(n) for n in below_average) or None}
+    ''')
 
 
 numbers = []
@@ -65,5 +72,6 @@ while True:
         continue
     else:
         # calculate and display results
-        display_results(get_results(numbers))
+        calculated_results = calculate_results(numbers)
+        display_results(calculated_results)
         break
