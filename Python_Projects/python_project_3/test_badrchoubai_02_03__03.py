@@ -23,8 +23,8 @@ class TestProblemThree(unittest.TestCase):
         # if postal code starts with one of these letters it will be invalid
         # {'D', 'F', 'I', 'O', 'Q', 'U', 'W', 'Z'}
         self.assertEqual(is_valid_province_code('Z0A 5B4'), False)
-        self.assertEqual(is_valid_province_code(''), False)
-        self.assertEqual(is_valid_province_code('T2N'), False)
+        self.assertRaises(IndexError, is_valid_province_code, '')
+        self.assertRaises(IndexError, is_valid_province_code, 'T2N')
 
 
 if __name__ == '__main__':
