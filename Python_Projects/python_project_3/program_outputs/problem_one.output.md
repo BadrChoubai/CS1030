@@ -1,3 +1,4 @@
+```bash
 Script started on Sun Mar 29 19:17:45 2020
 
 python3 badrchoubai_02_03__01.py
@@ -17,3 +18,4 @@ python3 badrchoubai_02_03__01.py
 | 100     | 212        |
 
 Script done on Sun Mar 29 19:17:53 2020
+```
