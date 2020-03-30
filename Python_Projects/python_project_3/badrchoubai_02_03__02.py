@@ -65,7 +65,6 @@ while True:
     if number_input.isdigit() and number_input != '0':
         # append number_input to numbers list
         numbers.append(int(number_input))
-        continue
     elif not number_input.isdigit():
         # Prompt user to enter a number
         print("Please enter a number.")
