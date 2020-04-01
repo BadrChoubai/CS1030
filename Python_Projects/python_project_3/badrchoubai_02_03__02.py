@@ -3,11 +3,6 @@ Name: Badr Choubai
 Professor: David Kramer
 Class: CS 1030
 Project: Python Project Three
-
-Part of the specifications states to allow for the possibility that there are no numbers below
-the average and/or no numbers above the average. so a question asked is.
-
-What does that mean about the numbers in the list?
 '''
 
 
