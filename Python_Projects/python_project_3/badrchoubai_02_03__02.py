@@ -38,8 +38,7 @@ def calculate_results(numbers: [int]) -> tuple:
 
 def display_results(results: tuple) -> None:
     '''display_results
-    This function takes a list of results and prints them in a
-    prettified manner.
+    This function takes a results tuple with two values and prints them.
     '''
     calculated_average = round(results[0], 2)
     above_average, equal_to_average, below_average = results[1].values()
