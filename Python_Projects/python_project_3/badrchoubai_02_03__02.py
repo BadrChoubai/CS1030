@@ -27,7 +27,9 @@ def calculate_results(numbers: [int]) -> tuple:
 
     try:
         calculated_average = sum(numbers) / len(numbers)
-
+    except ZeroDivisionError:
+        print('No Average Calculated')
+    else:
         for number in numbers:
             if number > calculated_average:
                 results['above_average'].append(number)
@@ -35,9 +37,6 @@ def calculate_results(numbers: [int]) -> tuple:
                 results['equal_to_average'].append(number)
             if number < calculated_average:
                 results['below_average'].append(number)
-
-    except ZeroDivisionError:
-        print('No Average Calculated')
 
     return (calculated_average, results)
 
