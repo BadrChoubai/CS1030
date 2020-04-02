@@ -1,0 +1,6 @@
+# Lines that begin with a pound sign should be recognized as a comment and ignored.
+So this should be the first line we see in the output file
+# User Passwords (append each with '#')
+# tu3082htj42outhnf
+# g0pireqy9g0jhed
+vjd90-gaudf089d9sa8
