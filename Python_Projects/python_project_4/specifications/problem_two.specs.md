@@ -2,7 +2,7 @@
 
 Write a program that reads sentences from a file, and calculate the occurences of each letter in the sentence. 
 
-- The sentences are read in from this file, [1030_Project_04_02_Sentences.txt](../project_resources/1030_Project_04_02_Sentences.txt)
+- The sentences are read in from this file, `1030 Project 04 02 Sentences.txt`
 - Print the original lines as your read them, then convert lower case letters to uppercase letters.
 - After processing all the lines in input file, display the results and output them to a file `FirstnameLastname_03_04_02_Output.txt`
 
