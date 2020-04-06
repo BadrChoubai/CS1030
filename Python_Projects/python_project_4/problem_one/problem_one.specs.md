@@ -5,7 +5,7 @@ Write a program that reads a list of words and calculates the Scrabble™ point 
 - The words are read in from `1030 Project 04 01 Words.txt`
 - If the length of the word is `0 or >= 10`, it's score should be `0`.
 - Convert lowercase letters to uppercase with the method `str.upper()`
-    - You can test if a letter is uppercase using `str.isalpha()`
+    - You can test a character is a letter using `str.isalpha()`
 
 ### Point Values Table
 | Point Value | Letters |
