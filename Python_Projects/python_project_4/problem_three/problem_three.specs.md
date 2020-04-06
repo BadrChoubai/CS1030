@@ -20,7 +20,6 @@ Write a program that concatenates (combines) one or more files, writing them yo 
     - Line 5
     - Line 6 
 
-
 The output file, `FirstnameLastname 02 04 03 Output.txt`, would look like this:
 
 ```
