@@ -2,21 +2,23 @@
 
 ## Topics Covered
 
-- Looping Structures
-	- `while` loop
-	- `for` loop
 - `str` functions
-	- slicing
-	- substring
-- Functions
-	- defining functions
-	- invoking functions  
+	- `str` slicing
+	- `.strip()`, `.lstrip()`, `.rstrip()`
+	- `.title()`
 - Data Structures
 	- `list`
 	- `dict`
+- Looping Structures
+	- `while` loop
+	- `for` loop
+- Functions
+	- defining functions
+	- invoking functions  
 - File IO
 	- Reading files
 	- Writing to files
+	- `with` keyword 
 - Testing Approaches
 	- Debugging
 	- Exceptions
