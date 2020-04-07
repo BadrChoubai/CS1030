@@ -8,10 +8,10 @@
 - `str` functions
 	- slicing
 	- substring
-- functions
+- Functions
 	- defining functions
 	- invoking functions  
-- data structures
+- Data Structures
 	- `list`
 	- `dict`
 - File IO
@@ -19,6 +19,7 @@
 	- Writing to files
 - Testing Approaches
 	- Debugging
+	- Exceptions
 	- Unit Testing
 
 ## Video Responses
