@@ -21,8 +21,6 @@
 	- Debugging
 	- Unit Testing
 
-
-
 ## Video Responses
 
 ### Social, Ethical, Economic, Healthcare and Legal Issues in Computing, Part 1
