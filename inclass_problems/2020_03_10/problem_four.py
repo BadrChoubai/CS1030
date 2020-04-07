@@ -12,7 +12,7 @@ counter = dict()
 for num in nums:
     if num in counter:
         counter[num] += 1
-    else: 
+    else:
         counter[num] = 1
 
 print(input_list)

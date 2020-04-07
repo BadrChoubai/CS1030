@@ -1,5 +1,5 @@
 import unittest
-from badrchoubai_02_03__03 import search_provinces, is_valid_province_code
+from badrchoubai_02_03__03 import search_provinces, is_valid_postal_code
 
 
 class TestProblemThree(unittest.TestCase):
@@ -16,15 +16,15 @@ class TestProblemThree(unittest.TestCase):
         self.assertEqual(search_provinces('J0J 5S6'),
                          (['quebec'], 'Rural'))
 
-    def test_is_valid_province_code(self):
-        self.assertEqual(is_valid_province_code('T2N 1N4'), True)
-        self.assertEqual(is_valid_province_code('X0A 1B2'), True)
-        self.assertEqual(is_valid_province_code('K1A0B1'), False)
+    def test_is_valid_postal_code(self):
+        self.assertEqual(is_valid_postal_code('T2N 1N4'), True)
+        self.assertEqual(is_valid_postal_code('X0A 1B2'), True)
+        self.assertEqual(is_valid_postal_code('K1A0B1'), False)
         # if postal code starts with one of these letters it will be invalid
         # {'D', 'F', 'I', 'O', 'Q', 'U', 'W', 'Z'}
-        self.assertEqual(is_valid_province_code('Z0A 5B4'), False)
-        self.assertRaises(IndexError, is_valid_province_code, '')
-        self.assertRaises(IndexError, is_valid_province_code, 'T2N')
+        self.assertEqual(is_valid_postal_code('Z0A 5B4'), False)
+        self.assertRaises(IndexError, is_valid_postal_code, '')
+        self.assertRaises(IndexError, is_valid_postal_code, 'T2N')
 
 
 if __name__ == '__main__':
