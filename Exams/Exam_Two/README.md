@@ -45,15 +45,16 @@ To practice writing program specifications and apply what we've learned I came u
 	guitarist
 	P	
 	parasite, pedantic
+	```
 	
 ### Program Two - Word Search Engine
 
 [Code](study_guide_pp2.py)
 
 
-- Write a program that takes the output file from the first program.
-- Prompt the user for a single letter and return the words belonging to that letter.
-- Exit the program if the user types `<Enter>`.
+- Write a program that takes the output file from the first program as an input file.
+- Prompt the user for a single letter and if there are any words belonging to the letter print them out, otherwise prompt the user for input again.
+- Exit the program.
 
 ## Video Responses
 
