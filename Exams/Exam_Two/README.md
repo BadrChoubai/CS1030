@@ -33,8 +33,7 @@ To practice writing program specifications and apply what we've learned I came u
 [Code](study_guide_pp1.py)
 
 - Write a program that asks a user to input words, end the program when they press `<Enter>`.
-- Add each word to a dictionary where the `key` is the first letter in the word and the value is the word.
-	- If there is already a word assigned to the `key` change the value's data type to a list
+- Add each word to a dictionary where the `key` is the first letter in the word and the value is a list of words starting with that letter.
 - Output the dictionary that was created to a new file `dictionary.txt` to look like:
 
 	```
