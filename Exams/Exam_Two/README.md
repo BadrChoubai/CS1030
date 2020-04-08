@@ -38,13 +38,13 @@ To practice writing program specifications and apply what we've learned I came u
 
 	```
 	A
-	Alacritty, Alone 
+	alacritty, alone 
 	C
-	Coding
+	coding
 	G
-	Guitarist
+	guitarist
 	P	
-	Parasite, Pedantic
+	parasite, pedantic
 	
 ### Program Two - Word Search Engine
 
