@@ -24,6 +24,33 @@
 	- Exceptions
 	- Unit Testing
 
+## Study Guide Programs
+
+To practice writing program specifications and apply what we've learned I came up with two programs for myself to build.
+
+### Program One - User Created Dictionary
+
+- Write a program that asks a user to input words, end the program when they press `<Enter>`.
+- Add each word to a dictionary where the `key` is the first letter in the word and the value is the word.
+	- If there is already a word assigned to the `key` change the value's data type to a list
+- Output the dictionary that was created to a new file `dictionary.txt` to look like:
+
+	```
+	A
+	Alacritty, Alone 
+	C
+	Coding
+	G
+	Guitarist
+	P	
+	Parasite, Pedantic
+	
+### Program Two - Word Search Engine
+
+- Write a program that takes the output file from the first program.
+- Prompt the user for a single letter and return the words belonging to that letter.
+- Exit the program if the user types `<Enter>`.
+
 ## Video Responses
 
 ### Social, Ethical, Economic, Healthcare and Legal Issues in Computing, Part 1
