@@ -6,10 +6,11 @@ Write a program that concatenates (combines) one or more files, writing them yo 
 - Read each of the files outputting them to a file `FirstnameLastname 02 04 03 Output.txt`
 
 ### For Example
-- The input file 1030 Project 04 03 Files.txt has these three lines:
+- The input file has these three lines:
     - 1030 Project 04 03 File 1.txt
     - 1030 Project 04 03 File 2.txt
     - 1030 Project 04 03 File 3.txt
+
 - The first file has these lines:
     - Line 1
     - Line 2
@@ -20,7 +21,7 @@ Write a program that concatenates (combines) one or more files, writing them yo 
     - Line 5
     - Line 6 
 
-The output file, `FirstnameLastname 02 04 03 Output.txt`, would look like this:
+The output file, would look like this:
 
 ```
 Line 1
