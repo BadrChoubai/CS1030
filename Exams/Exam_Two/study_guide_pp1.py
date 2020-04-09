@@ -7,9 +7,9 @@ import sys
 def write_to_file(file_path, content):
     try:
         with open(file_path, 'w') as file:
-            for letter, words in content.items():
-                file.write(letter + '\n')
-                file.write(', '.join(sorted(words)) + '\n')
+            for letter in sorted(content.keys()):
+                file.write(f'{letter}\n' +
+                           ', '.join(sorted(content[letter])) + '\n')
     except FileNotFoundError:
         print('File not found', file_path)
 
