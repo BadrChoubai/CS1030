@@ -56,6 +56,36 @@ To practice writing program specifications and apply what we've learned I came u
 - Prompt the user for a single letter and if there are any words belonging to the letter print them out, otherwise prompt the user for input again.
 - Exit the program.
 
+
+## Exam Program Specifications 
+
+### Program One
+- Write a program that prompts repeatedly for decimal numbers. 
+- Store each number in a list. 
+- Stop asking for numbers when the user enters a 0 which is not stored in the list. 
+- Calculate and print two lines of output as follows:
+
+	Line 1		The sum of all the numbers: `sum goes here` \
+	Line 2		The average of all the numbers: `average goes here`
+
+### Program Two 
+
+- Write a program that generates a list of 6 lottery numbers between 1 and 49 without duplicates. 
+- Use the random.randint(1,49) function to generate the random numbers. When you have 6 unique numbers, print them sorted in ascending order. 
+- If your list is named ‘lottery’ then the standalone statement `lottery.sort()` sorts the list. 
+
+### Program Three
+
+- Write a program that reads file “ZipAndCity.txt” which contains pairs of items one pair to a line -- a zip code and the city -- and creates an entry in the dictionary called zip_code. 
+- The pair of items are separated by a comma. Sample lines:
+	```
+	80220,Denver
+	54901,Oshkosh
+	10024,New York
+	```
+- From each list entry, create a dictionary entry, with the zip code as the key and the city as the value. 
+
+
 ## Video Responses
 
 ### Social, Ethical, Economic, Healthcare and Legal Issues in Computing, Part 1
