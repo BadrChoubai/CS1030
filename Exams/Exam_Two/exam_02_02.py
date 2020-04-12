@@ -1,5 +1,14 @@
-import random
+from random import randint
 
-lottery_numbers = random.sample(range(1, 49), 6)
+lottery_numbers = list()
 
-print(sorted(lottery_numbers))
+for i in range(6):
+    number = randint(1, 49)
+
+    while number in lottery_numbers:
+        number = randint(1, 49)
+
+    lottery_numbers.append(number)
+
+lottery_numbers.sort()
+print(lottery_numbers)
