@@ -26,7 +26,7 @@ def main():
     word_scores = []
     input_file = '1030 Project 04 01 Words.txt'
 
-    with open(input_file) as word_submissions:
+    with open(input_file, 'r') as word_submissions:
         for line in word_submissions.readlines():
             if not line.isspace():
                 word = line.replace('\n', '').upper()
