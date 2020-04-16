@@ -1,22 +1,21 @@
-def calculate_average(decimal_numbers: [float]) -> float:
-    result = 0
+def calculate_average(decimal_numbers: list) -> float:
+    result = 0.0
     try:
         result = sum(
             decimal_numbers) / len(decimal_numbers)
     except ZeroDivisionError:
         print('Could not calculate average')
-    else:
-        return round(result, 2)
+
+    return round(result, 2)
 
 
-decimal_numbers: [float] = []
+decimal_numbers: list = []
+
 while True:
-    number_input = input("Give me a number: ")
-
     try:
-        number_input = float(number_input)
+        number_input = float(input("Give me a number: "))
     except ValueError:
-        print('Double check the value you entered')
+        print("Double check the value you entered or type '0' to exit")
     else:
         if number_input != 0:
             decimal_numbers.append(number_input)
