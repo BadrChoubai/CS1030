@@ -1,13 +1,14 @@
-import random
+from random import randint
 
+lottery_numbers = list()
 
-def unique(lottery_numbers: list) -> bool:
-    return sum(set(lottery_numbers)) == sum(lottery_numbers)
+for i in range(6):
+    number = randint(1, 49)
 
+    while number in lottery_numbers:
+        number = randint(1, 49)
 
-lottery_numbers = [random.randint(1, 49) for i in range(6)]
+    lottery_numbers.append(number)
 
-while not unique(lottery_numbers):
-    lottery_numbers = [random.randint(1, 49) for i in range(6)]
-
-print(sorted(lottery_numbers))
+lottery_numbers.sort()
+print(lottery_numbers)
