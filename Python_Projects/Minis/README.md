@@ -6,8 +6,11 @@ Description: This folder contains my solutions for smaller assignments given by 
 
 ## Assignments 
 
-- [OOP in Python Practice -  A Basic Class](minis_1.py)
+- [OOP in Python -  A Basic Class](minis_1.py)
     - ### Specifications
         - Create a class of your choosing with three instance variables and one static method
 
+- [OOP in Python - Class Inheritance](minis_2.py)
+    - ### Specifications
+        - Create a class for an everyday situation. Create two subclasses that have at least 2 fields (instance variables) that are not in the other subclass
  

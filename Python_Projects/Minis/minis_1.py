@@ -15,4 +15,4 @@ class Playlist():
             self.tracks = []
 
     def add_tracks(self, new_tracks: list):
-        self.tracks.append(new_tracks)
+        self.tracks.extend(new_tracks)
