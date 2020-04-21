@@ -1,27 +1,2 @@
-abcdefghijklmnopqrstuvwxyz
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklMNOPQRSTUVWXYZ
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-ABCDEFGhijklmnopqrstuvwxyz
-abcdef ghijklmnop_qrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmNO_PQRstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefgh&ijklmnopqrstuvwxyz
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmno pqrstuvwxyz
-abc123
+See Spot.
+See Spot code in Python.
