@@ -1,29 +1,27 @@
-def update_letter_counts(sentence: list, letter_occurences: dict) -> dict:
-    for letter in sentence:
-        if letter in letter_occurences:
-            letter_occurences[letter] += 1
-        else:
-            letter_occurences[letter] = 0
-            letter_occurences[letter] += 1
+from string import ascii_uppercase
 
-    return letter_occurences
+
+def update_letter_counts(sentence: list, char_occurences: dict) -> dict:
+    for char in sentence:
+        char_occurences[char] += 1
+
+    return char_occurences
 
 
 def main():
-    letter_occurences = {}
+    char_occurences = dict(
+        zip(ascii_uppercase, [0 for i in range(26)]))
     input_file = 'test sentences.txt'
 
     with open(input_file, 'r') as sentence_file:
-        # Work on output display and file output
         for line in sentence_file.readlines():
             if not line.isspace():
                 line = line.replace('\n', '')
-                print(line)
                 line = line.upper()
                 update_letter_counts(
-                    [c for c in line if c.isalpha()], letter_occurences)
+                    [char for char in line if char.isalpha()], char_occurences)
 
-    print(letter_occurences)
+    # Work on output display and file output
 
 
 if __name__ == "__main__":
