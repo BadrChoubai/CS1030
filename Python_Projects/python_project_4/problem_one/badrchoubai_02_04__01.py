@@ -10,8 +10,16 @@ def letter_score(letter: str) -> int:
     }[letter]
 
 
+def score_word(word):
+    if len(word) == 0 or len(word) >= 10:
+        return 0
+
+    return sum(letter_score(letter) for letter in word if letter.isalpha())
+
+
 def main():
     all_words = []
+    scores = []
     input_file = '1030 Project 04 01 Words.txt'
 
     with open(input_file, 'r') as word_submissions:
@@ -19,13 +27,13 @@ def main():
             if not line.isspace():
                 word = line.replace('\n', '').upper()
                 all_words.append(word)
-
-    scores = [sum([letter_score(letter) for letter in word])
-              for word in all_words if word.isalpha()]
+                scores.append(score_word(word))
 
     print('Word -> Score')
     for word, score in zip(all_words, scores):
-        print(word, score)
+        print(word, '->', score)
+
+    print('Total -> {t}'.format(t=sum(scores)))
 
 
 if __name__ == "__main__":
