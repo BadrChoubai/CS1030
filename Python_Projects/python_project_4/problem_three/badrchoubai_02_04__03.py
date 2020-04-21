@@ -12,7 +12,8 @@ def parse_input_file(file_path: str) -> list:
     except FileNotFoundError:
         print('Input file not found: ', file_path)
 
-    return output
+    finally:
+        return output
 
 
 def main():
@@ -20,10 +21,10 @@ def main():
     output_file = 'BadrChoubai 02 04 03 Output.txt'
     files_to_combine = parse_input_file(input_file)
 
-    with open(output_file, 'w') as output:
+    with open(output_file, 'w') as output_file:
         for file in files_to_combine:
             with open(file + '.txt', 'r') as content_file:
-                output.write(content_file.read() + '\n')
+                output_file.write(content_file.read() + '\n')
 
 
 if __name__ == "__main__":
