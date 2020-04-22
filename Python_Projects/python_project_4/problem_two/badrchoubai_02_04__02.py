@@ -12,7 +12,8 @@ def main():
     # create dictionary with characters A-Z; set values to 0;
     char_occurences = dict(
         zip(ascii_uppercase, [0 for i in range(26)]))
-    input_file = 'test sentences.txt'
+    input_file = '1030 Project 04 02 Sentences.txt'
+    output_file = 'BadrChoubai 03 04 02 Output.txt'
 
     # Open the input file
     with open(input_file, 'r') as sentence_file:
@@ -20,12 +21,15 @@ def main():
         for line in sentence_file.readlines():
             if not line.isspace():
                 line = line.replace('\n', '')
-                print(line)
 
                 update_char_occurences(
                     [char.upper() for char in line if char.isalpha()], char_occurences)
 
-    # Work on final output to console and to file
+    # Work on final output to file
+    with open(output_file, mode='w') as output_file:
+        output_file.write('Letter -> Occurences\n')
+        for char, char_occurence in char_occurences.items():
+            output_file.write(f'{char} -> {char_occurence}\n')
 
 
 if __name__ == "__main__":
