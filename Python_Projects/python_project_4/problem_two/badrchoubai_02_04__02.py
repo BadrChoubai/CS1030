@@ -16,7 +16,7 @@ def main():
     output_file = 'BadrChoubai 03 04 02 Output.txt'
 
     # Open the input file
-    with open(input_file, 'r') as sentence_file:
+    with open(input_file, mode='r') as sentence_file:
         # parse and clean up each line in file
         for line in sentence_file.readlines():
             if not line.isspace():
