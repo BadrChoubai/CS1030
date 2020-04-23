@@ -24,10 +24,9 @@ def main():
 
     with open(input_file, 'r') as word_submissions:
         for line in word_submissions.readlines():
-            if not line.isspace():
-                word = line.replace('\n', '').upper()
-                all_words.append(word)
-                scores.append(score_word(word))
+            word = line.replace('\n', '').upper()
+            all_words.append(word)
+            scores.append(score_word(word))
 
     print('Word -> Score')
     for word, score in zip(all_words, scores):
