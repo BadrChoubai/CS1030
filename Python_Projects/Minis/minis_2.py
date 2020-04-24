@@ -18,7 +18,7 @@ class Property():
 
     @staticmethod
     def generate_uuid():
-        return uuid.uuid1()
+        return uuid.uuid4()
 
 
 class Home(Property):
