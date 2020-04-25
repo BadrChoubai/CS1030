@@ -15,10 +15,9 @@ def calculate_end_results(flip_results: list) -> tuple:
     Returns:
         (tuple) of calculated minimum, average and maximum
     '''
-    def _sum(x, y): return x + y
 
     minimum = min(flip_results)
-    average = reduce(_sum, flip_results) // len(flip_results)
+    average = reduce(lambda x, y: x + y, flip_results) // len(flip_results)
     maximum = max(flip_results)
     return (minimum, average, maximum)
 
