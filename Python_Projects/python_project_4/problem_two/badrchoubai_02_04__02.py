@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from string import ascii_uppercase
-import sys
 import os.path
 
 
