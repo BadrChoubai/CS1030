@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from string import ascii_uppercase
 
 
@@ -17,11 +19,9 @@ def main():
 
     # Open the input file
     with open(input_file, mode='r') as sentence_file:
-        # Parse and clean up each line in file
+        # Parse each line in file
         for line in sentence_file.readlines():
-            if not line.isspace():
-                line = line.replace('\n', '')
-
+            if line != '\n':
                 update_char_occurences(
                     [char.upper() for char in line if char.isalpha()], char_occurences)
 
