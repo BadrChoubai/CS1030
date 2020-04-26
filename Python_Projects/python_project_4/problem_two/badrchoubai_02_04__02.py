@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+
 from string import ascii_uppercase
+import os.path
 
 
 def update_char_occurences(characters: list, char_occurences: dict) -> dict:
@@ -12,16 +15,17 @@ def main():
     # Create a dictionary with characters A-Z; set values to 0;
     char_occurences = dict(
         zip(ascii_uppercase, [0 for i in range(26)]))
-    input_file = '1030 Project 04 02 Sentences.txt'
+
+    # Allow script to be called succesfully from outside of project directory
     output_file = 'BadrChoubai 03 04 02 Output.txt'
+    script = os.path.dirname(__file__)
+    input_file = os.path.join(script, '1030 Project 04 02 Sentences.txt')
 
     # Open the input file
     with open(input_file, mode='r') as sentence_file:
-        # Parse and clean up each line in file
+        # Parse each line in file
         for line in sentence_file.readlines():
-            if not line.isspace():
-                line = line.replace('\n', '')
-
+            if line != '\n':
                 update_char_occurences(
                     [char.upper() for char in line if char.isalpha()], char_occurences)
 
