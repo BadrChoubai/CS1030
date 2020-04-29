@@ -38,5 +38,5 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-    except FileNotFoundError:
+    except FileNotFoundError as error:
         print(error)
