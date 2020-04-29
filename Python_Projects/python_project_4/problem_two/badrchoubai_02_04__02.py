@@ -1,5 +1,4 @@
 from string import ascii_uppercase
-import os.path
 
 
 def update_char_occurences(characters: list, char_occurences: dict) -> dict:
