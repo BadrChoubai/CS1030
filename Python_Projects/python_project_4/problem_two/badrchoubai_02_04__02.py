@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from string import ascii_uppercase
 import os.path
 
@@ -16,10 +14,8 @@ def main():
     char_occurences = dict(
         zip(ascii_uppercase, [0 for i in range(26)]))
 
-    # Allow script to be called succesfully from outside of project directory
+    input_file = '1030 Project 04 02 Sentences.txt'
     output_file = 'BadrChoubai 03 04 02 Output.txt'
-    script = os.path.dirname(__file__)
-    input_file = os.path.join(script, '1030 Project 04 02 Sentences.txt')
 
     # Open the input file
     with open(input_file, mode='r') as sentence_file:
@@ -39,4 +35,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except FileNotFoundError as error:
+        print(error)

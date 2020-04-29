@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from contextlib import ExitStack
 # ExitStack Documentation :: https://docs.python.org/3/library/contextlib.html#contextlib.ExitStack
 # ExitStack Blog Post :: https://www.rath.org/on-the-beauty-of-pythons-exitstack.html

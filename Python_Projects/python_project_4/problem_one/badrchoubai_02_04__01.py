@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-
-
 def letter_score(letter: str) -> int:
     return {
         'A': 1, 'E': 1, 'I': 1, 'L': 1, 'N': 1, 'O': 1, 'R': 1, 'S': 1, 'T': 1, 'U': 1,
@@ -39,4 +36,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except FileNotFoundError:
+        print(error)
