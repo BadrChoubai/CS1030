@@ -3,5 +3,5 @@ def odd_or_even(value: int) -> str:
 
 
 if __name__ == "__main__":
-    print(odd_or_even_value(2))
-    print(odd_or_even_value(3))
+    print(odd_or_even(2))
+    print(odd_or_even(3))
