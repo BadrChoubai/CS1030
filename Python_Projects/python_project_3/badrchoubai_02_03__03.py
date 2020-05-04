@@ -5,6 +5,7 @@ Class: CS 1030
 Project: Python Project Three
 '''
 import sys
+import re
 
 
 def print_search_results(results: tuple) -> None:
@@ -17,22 +18,16 @@ def print_search_results(results: tuple) -> None:
         province_list[i] = province_list[i].replace('_', ' ').title()
 
     print(
-        f'The Province Code you entered is for a {province_type} area \
-            in {" or the ".join(province_list)}')
+        f'The postal code you entered is for a {province_type} in {province_list[0]}')
 
 
 def is_valid_postal_code(postal_code_input: str) -> bool:
     '''is_valid_postal_code
-    This method takes the postal code input and runs a series of checks
-    to see whether or not it is a valid input.
+    This method takes the postal code input and matches it to a regular expression.
+    https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s15.html
     '''
-    # if postal code starts with one of these letters it will be invalid
-    invalid_letters = {'D', 'F', 'I', 'O', 'Q', 'U', 'W', 'Z'}
-    valid_length = len(postal_code_input) == 7
-    valid_format = postal_code_input[3].isspace()
-    valid_letter = postal_code_input[0] not in invalid_letters
-
-    return valid_length and valid_format and valid_letter
+    postal_code_re = r'^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] [0-9][A-Z][0-9]$'
+    return True if re.compile(postal_code_re).match(postal_code_input) else False
 
 
 def search_provinces(postal_code_input: str) -> tuple:
@@ -51,8 +46,7 @@ def search_provinces(postal_code_input: str) -> tuple:
         'saskatchewan': 'S',
         'alberta': 'T',
         'british_columbia': 'V',
-        'nunavut': 'X',
-        'northwest_territories': 'X',
+        'nunavut or the northwest_territories': 'X',
         'yukon': 'Y',
     }
     province_type = 'Rural' if postal_code_input[1] == '0' else 'Urban'
@@ -68,17 +62,17 @@ def search_provinces(postal_code_input: str) -> tuple:
 
 def main():
     while True:
-        postal_code_input = input("Enter a Canadian province code: ")
+        postal_code_input = input("Enter a Canadian postal code: ")
 
-        if postal_code_input == '':
-            sys.exit()
-        elif is_valid_postal_code(postal_code_input):
+        if is_valid_postal_code(postal_code_input):
             search_results = search_provinces(postal_code_input)
             print_search_results(search_results)
             continue
+        elif postal_code_input == '':
+            sys.exit()
         else:
             print(
-                f'Please enter a valid Canadian province code')
+                f'Please enter a valid Canadian postal code')
 
 
 if __name__ == '__main__':
