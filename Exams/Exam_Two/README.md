@@ -3,26 +3,26 @@
 ## Topics Covered
 
 - `str` functions
-	- `str` slicing
-	- `.strip()`, `.lstrip()`, `.rstrip()`
-	- `.title()`
+  - `str` slicing
+  - `.strip()`, `.lstrip()`, `.rstrip()`
+  - `.title()`
 - Data Structures
-	- `list`
-	- `dict`
+  - `list`
+  - `dict`
 - Looping Structures
-	- `while` loop
-	- `for` loop
+  - `while` loop
+  - `for` loop
 - Functions
-	- defining functions
-	- invoking functions  
+  - defining functions
+  - invoking functions  
 - File IO
-	- Reading files
-	- Writing to files
-	- `with` keyword 
+  - Reading files
+  - Writing to files
+  - `with` keyword
 - Testing Approaches
-	- Debugging
-	- Exceptions
-	- Unit Testing
+  - Debugging
+  - Exceptions
+  - Unit Testing
 
 ## Study Guide Programs
 
@@ -34,57 +34,59 @@ To practice writing program specifications and apply what we've learned I came u
 
 - Write a program that asks a user to input words, end the program when they press `<Enter>`.
 - Add each word to a dictionary where the `key` is the first letter in the word and the value is a list of words starting with that letter.
-- Output the dictionary that was created to a new file `dictionary.txt` to look like:
+- The output file should look like:
 
-	```
-	A
-	alacritty, alone 
-	C
-	coding
-	G
-	guitarist
-	P	
-	parasite, pedantic
-	```
-	
+  ```txt
+  <!-- dictionary.txt -->
+  
+  A
+  alacritty, alone
+  C
+  coding
+  G
+  guitarist
+  P
+  parasite, pedantic
+  ```
+
 ### Program Two - Word Search Engine
 
 [Code](study_guide_pp2.py)
-
 
 - Write a program that takes the output file from the first program as an input file.
 - Prompt the user for a single letter and if there are any words belonging to the letter print them out, otherwise prompt the user for input again.
 - Exit the program.
 
-
-## Exam Program Specifications 
+## Exam Program Specifications
 
 ### Program One
-- Write a program that prompts repeatedly for decimal numbers. 
-- Store each number in a list. 
-- Stop asking for numbers when the user enters a 0 which is not stored in the list. 
+
+- Write a program that prompts repeatedly for decimal numbers.
+- Store each number in a list.
+- Stop asking for numbers when the user enters a 0 which is not stored in the list.
 - Calculate and print two lines of output as follows:
 
-	Line 1		The sum of all the numbers: `sum goes here` \
-	Line 2		The average of all the numbers: `average goes here`
+  Line 1: The sum of all the numbers: `sum goes here` \
+  Line 2:  The average of all the numbers: `average goes here`
 
-### Program Two 
+### Program Two
 
-- Write a program that generates a list of 6 lottery numbers between 1 and 49 without duplicates. 
-- Use the random.randint(1,49) function to generate the random numbers. When you have 6 unique numbers, print them sorted in ascending order. 
-- If your list is named ‘lottery’ then the standalone statement `lottery.sort()` sorts the list. 
+- Write a program that generates a list of 6 lottery numbers between 1 and 49 without duplicates.
+- Use the random.randint(1,49) function to generate the random numbers. When you have 6 unique numbers, print them sorted in ascending order.
+- If your list is named ‘lottery’ then the standalone statement `lottery.sort()` sorts the list.
 
 ### Program Three
 
 - Write a program that reads file “ZipAndCity.txt” which contains pairs of items one pair to a line -- a zip code and the city -- and creates an entry in the dictionary called zip_code. 
 - The pair of items are separated by a comma. Sample lines:
-	```
-	80220,Denver
-	54901,Oshkosh
-	10024,New York
-	```
-- From each list entry, create a dictionary entry, with the zip code as the key and the city as the value. 
 
+  ```txt
+  80220,Denver
+  54901,Oshkosh
+  10024,New York
+  ```
+
+- From each list entry, create a dictionary entry, with the zip code as the key and the city as the value. 
 
 ## Video Responses
 
@@ -100,6 +102,3 @@ To practice writing program specifications and apply what we've learned I came u
 - [A New Philosophy on Artificial Intelligence, Kristian Hammond, TED talk](https://www.youtube.com/watch?v=tr9oe2TZiJw)
 - [Why Do Ethics Matter?, Shefali Roy, TED talk](https://www.youtube.com/watch?v=yesE4mcv4CM)
 - [Machine Learning Basics](https://www.youtube.com/watch?v=ukzFI9rgwfU)
-
-
-
