@@ -24,6 +24,7 @@
 - [dictionary_builder()](dictionary_builder.py)
 - [reverse_str()](reverse_str.py)
 - [fizzbuzz()](fizzbuzz.py)
+- [for()](for.py)
 
 ## Video Responses
 
