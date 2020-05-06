@@ -21,7 +21,11 @@
 
 ### Practice Program One
 
-...
+Dictionary Builder
+
+Write a function `dictionary_builder` that takes a list of tuples where the element at index `0` represents a dictionary key and the element at index `1` are it's values of any type.
+
+return the dictionary that is created
 
 ### Practice Program Two
 
