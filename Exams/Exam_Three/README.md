@@ -25,6 +25,7 @@
 - [reverse_str()](reverse_str.py)
 - [fizzbuzz()](fizzbuzz.py)
 - [for()](for.py)
+- [functional programming in Python](python_fp.py)
 
 ## Video Responses
 
