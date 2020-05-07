@@ -5,19 +5,12 @@
 - Control Flow Structures
   - `for` loop
   - `while` loop
-  - Use cases for both
 - `str` functions
   - substring
   - slicing
-- functions
-  - defining functions
-  - using (invoking) functions
 - Basic data structures
   - `list []`
   - `dict {}`
-- File I.O.
-  - Opening a file for read or write
-- Testing approaches
 
 ### Code
 

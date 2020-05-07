@@ -12,4 +12,4 @@ for days, months in months:
     if month in months:
         days_in_month = days
 
-print(f'There are {days_in_month} days in {month}')
+print(f'There are {days_in_month} days in {month.title()}')
