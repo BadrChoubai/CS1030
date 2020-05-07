@@ -32,5 +32,5 @@ def deeply_flatten(matrix: list) -> list:
             yield i
 
 
-# deeply flatten is called as a generator expression
+# deeply_flatten() is called as a generator expression
 print(list(deeply_flatten(deep_matrix)))

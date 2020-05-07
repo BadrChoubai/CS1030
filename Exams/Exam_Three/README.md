@@ -23,6 +23,7 @@
 
 - [dictionary_builder()](dictionary_builder.py)
 - [reverse_str()](reverse_str.py)
+- [str_slices()](str_slices.py)
 - [fizzbuzz()](fizzbuzz.py)
 - [for()](for.py)
 - [FP In Python](python_fp.py)
