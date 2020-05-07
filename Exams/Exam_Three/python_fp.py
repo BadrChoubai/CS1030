@@ -24,5 +24,14 @@ print(sum_evens)
 
 # filter
 
-odds = filter(lambda x: x % 2, [i for i in range(1, 101)])
-print(list(odds))
+# Odd numbers
+odds = filter(lambda x: x % 3 == 0, [i for i in range(1, 101)])
+# Even numbers
+evens = filter(lambda x: x % 2 == 0, [i for i in range(1, 101)])
+
+# Filter words by length
+words = ['computer', 'science', 'ethics', 'consumerism',
+         'institutionalized', 'rationale', 'complete', 'exacerbated']
+
+longest_word = filter(lambda word: len(word) > 10, words)
+print(list(longest_word))
