@@ -6,10 +6,9 @@ months = [
 
 month = input('Enter a month of the year: ')
 
-month = month.lower()
 days_in_month = None
 for days, months in months:
-    if month in months:
+    if month.lower() in months:
         days_in_month = days
 
 print(f'There are {days_in_month} days in {month.title()}')
