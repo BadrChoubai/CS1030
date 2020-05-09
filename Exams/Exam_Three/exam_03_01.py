@@ -1,7 +1,7 @@
 months = [
     (31, ['january', 'march', 'may', 'july', 'august', 'october', 'december']),
     (30, ['april', 'june', 'september', 'november']),
-    ('28 or 29 days', ['February'])
+    ('28 or 29 days', ['february'])
 ]
 
 month = input('Enter a month of the year: ')
