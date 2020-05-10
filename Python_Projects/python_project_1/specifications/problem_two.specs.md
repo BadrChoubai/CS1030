@@ -1,8 +1,8 @@
 # Problem Two Specifications
 
-Description: Convert the user's input of Miles travelled and Gallons of fuel used, from miles per gallon to liters per kilometer 
+Description: Convert the user's input of Miles travelled and Gallons of fuel used, from miles per gallon to liters per kilometer.
 
-### Specifications
+## Specifications
 
 - 2.1 Prompt the user to enter a figure for miles per gallon.
 
@@ -14,4 +14,4 @@ Description: Convert the user's input of Miles travelled and Gallons of fuel use
 
 - 2.5 Print the miles per gallon and liters per kilometer with relevant messages, formatting your results to one decimal place.
 
-- 2.6 Exit the program. 
+- 2.6 Exit the program.

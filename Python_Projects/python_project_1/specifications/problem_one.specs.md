@@ -2,7 +2,7 @@
 
 Description: Convert a height entered by the user as feet and inches, to meters. 
 
-### Specifications
+## Specifications
 
 - 1.1 Prompt the user for the height and get the value from the user.
 
