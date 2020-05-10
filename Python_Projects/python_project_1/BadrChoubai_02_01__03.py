@@ -4,25 +4,7 @@ Professor: David Kramer
 Class: CS 1030
 Project: Python Project One
 """
-
-
-def find_color(coordinate: tuple) -> str:
-    coordinate = ord(coordinate[0]) + int(coordinate[1])
-    return "Black" if coordinate % 2 == 0 else "Red"
-
-
-def is_valid_coordinate(coordinate: tuple) -> bool:
-    coordinate_letter = coordinate[0] if coordinate[0].isalpha() else None
-    coordinate_number = coordinate[1] if coordinate[1].isdigit() else None
-
-    return [coordinate_letter, coordinate_number]
-
-
-def in_range(coordinate: tuple) -> bool:
-    letter_range = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-    number_range = [1, 2, 3, 4, 5, 6, 7, 8]
-
-    return coordinate[0] in letter_range and int(coordinate[1]) in number_range
+import sys
 
 
 def print_intro():
@@ -44,15 +26,17 @@ def print_intro():
 def main():
     print_intro()
 
-    coordinate = input("Give me a coordinate (a-h)(1-8) -> ")
-    coordinate = (coordinate[0], coordinate[1])
+    coordinate = input('Input a coordinate as a(-h)1(-8) Ex. j3: ')
+    in_range = coordinate[0] in "abcdefgh" and coordinate[1] in '12345678'
 
-    letter, number = is_valid_coordinate(coordinate)
-    if letter and number and in_range(coordinate):
-        color = find_color(coordinate)
-        print(f"Square { letter }{ number } is { color }")
+    if in_range:
+        tile_color = "Black" if (
+            ord(coordinate[0]) + int(coordinate[1])) % 2 == 0 else "White"
+
+        print('Tile', coordinate, f'is {tile_color}')
     else:
-        print("Double check that you input a valid coordinate.")
+        print('Coordinate input out of range.')
+        sys.exit()
 
 
 if __name__ == "__main__":
