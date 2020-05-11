@@ -1,8 +1,8 @@
 # Problem Three Specifications
 
-Description: Print the color of a square on a chessboard given the user's input of a coordinate 
+Description: Print the color of a square on a chessboard given the user's input of a coordinate.
 
-### Specifications
+## Specifications
 
 - 3.1 Print a multi-line message explaining what the program does and the format of the input.
 

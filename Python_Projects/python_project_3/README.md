@@ -1,11 +1,11 @@
 # Python Project 3
 
 Professor: Dr. Kramer \
-Due Date: 2020 / 04 / 02 
+Due Date: 2020 / 04 / 02
 
 ---
 
-### Solutions
+## Solutions
 
 Problem 1: Temperature Conversion Table - Loop Practice
 
