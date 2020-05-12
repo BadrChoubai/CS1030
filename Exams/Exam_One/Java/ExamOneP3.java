@@ -8,7 +8,7 @@ public class ExamOneP3 {
     private static class Coin {
         public String name;
         public int value;
-        
+
         Coin(String name, int value) {
             this.name = name;
             this.value = value;
@@ -23,12 +23,11 @@ public class ExamOneP3 {
 
     private static Map<String, Integer> makeChange(int cents) {
         Map<String, Integer> counter = new HashMap<>();
-
         for (Coin coin : coins) {
             counter.put(coin.name, 0);
         }
 
-        for (Coin coin: coins) {
+        for (Coin coin : coins) {
             while (cents - coin.value >= 0) {
                 counter.put(coin.name, counter.get(coin.name) + 1);
                 cents -= coin.value;
