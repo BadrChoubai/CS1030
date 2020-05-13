@@ -5,40 +5,35 @@ import java.util.HashMap;
 
 public class ExamOneP3 {
 
-    private static class Coin {
-        public String name;
-        public int value;
+    enum ECoin {
+        Quarter(25),
+        Dime(10),
+        Nickel(5),
+        Penny(1);
 
-        Coin(String name, int value) {
-            this.name = name;
+        final int value;
+
+        ECoin(int value) {
             this.value = value;
         }
     }
 
-    static Coin quarter = new Coin("quarter", 25);
-    static Coin dime = new Coin("dime", 10);
-    static Coin nickel = new Coin("nickel", 5);
-    static Coin penny = new Coin("penny", 1);
-    static Coin[] coins = { quarter, dime, nickel, penny };
+    private static Map<ECoin, Integer> makeChange(int cents) {
+        var change = new HashMap<ECoin, Integer>();
 
-    private static Map<String, Integer> makeChange(int cents) {
-        Map<String, Integer> counter = new HashMap<>();
-        for (Coin coin : coins) {
-            counter.put(coin.name, 0);
-        }
-
-        for (Coin coin : coins) {
+        for (var coin : ECoin.values()) {
             while (cents - coin.value >= 0) {
-                counter.put(coin.name, counter.get(coin.name) + 1);
+                change.put(coin, change.getOrDefault(coin, 0) + 1);
                 cents -= coin.value;
             }
         }
 
-        return counter;
+        return change;
+
     }
 
     public static void main(String[] args) {
-        Map<String, Integer> solution = makeChange(99);
+        Map<ECoin, Integer> solution = makeChange(99);
         System.out.println(solution);
     }
 }
