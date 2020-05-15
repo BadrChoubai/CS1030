@@ -3,8 +3,8 @@ package Exams.Exam_One.Java;
 public class ExamOneP2 {
 
     private static int mutationMath(int number) {
-        int result = 0;
-        String numberString = Integer.toString(number);
+        var result = 0;
+        var numberString = Integer.toString(number);
 
         for (int i = 1; i <= 3; i++) {
             result += Integer.parseInt(numberString);
