@@ -8,7 +8,7 @@ public class ExamTwoP1 {
 	private static Scanner inputScanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		List<Double> numbers = new ArrayList<Double>();
+		var numbers = new ArrayList<Double>();
 		boolean using = true;
 		double sum = 0;
 		double average = 0;
