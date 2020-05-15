@@ -2,7 +2,6 @@ package Exams.Exam_Two.Java;
 
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.List;
 
 public class ExamTwoP1 {
 	private static Scanner inputScanner = new Scanner(System.in);
