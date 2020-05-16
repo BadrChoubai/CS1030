@@ -1,11 +1,13 @@
 package Exams.Exam_Three.Java;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ExamThreeP2 {
     private static Scanner inputScanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         var items = new ArrayList<String>();
         var item = "";
@@ -23,10 +25,11 @@ public class ExamThreeP2 {
                 System.out.println(items.get(0));
             } else {
                 List<String> segmentedList = items.subList(0, items.size() - 1);
-                System.out.printf("%s and %s\n", segmentedList, items.get(items.size() - 1));
+                System.out.printf("%s and %s",
+                        segmentedList.toString().replace("[", "").replace("]", ""),
+                        items.get(items.size() - 1));
             }
-
-        } while(!item.isEmpty());
+        } while (!item.isEmpty());
         inputScanner.close();
-    } 
+    }
 }
