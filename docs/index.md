@@ -1,44 +1,29 @@
-# MSU Denver CS1030
+# MSU Denver Computer Science
 
-## Welcome
+Aimed at giving students a useful place to go to for learning resources, this is a compilation of things I personally found to be helpful in my own self-guided learning and would like to share.
 
-This is a small project dedicated to giving students taking CS1030 a place to go to for useful resources.
- 
-If there's anything you're struggling to learn or are curious about, reach out to Professor Kramer in class or at his office hours.
+## New To Programming
 
-His Office Hours Are:
+- [The Missing Semester of Your CS Education (MIT)](https://missing.csail.mit.edu/) - Ths course is aimed at teaching students how to use their computers. [Something often overlooked in CS curriculum](https://missing.csail.mit.edu/about/), it gives them a hands-on introduction to tools they will use in a variety of situations such as their command-line environment and version control with Git.
+- [Harvard University's CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381L3iZyDTxRwOBuUt6m1FnW) - Harvard's CS50 Course is a great way to learn the basics of programming, with each class introducing the learner to a different programming language in order to solve problems, starting with Scratch and ending with JavaScript.
+- [Programiz](https://www.programiz.com/) - This website offers beginner-friendly tutorials on a variety of programming languages with examples.
 
-| Days      | Times			  |
-| --------- | --------------- |
-| Mondays and Wednesdays   | 08:00am - 03:45pm |
-| Tuesdays and Thursdays   | 08:00am - 01:45pm and 04:00pm - 05:45pm |
-| Friday    | Available on Teams but no set schedule |
+## Python Programming Resources
 
-## Resources 
+- [Corey Schafer](https://www.youtube.com/user/schafer5/featured) - Courses for Python and other Python related topics on YouTube.
+- [Programiz - Python](https://www.programiz.com/python-programming)
 
-### Python
+## Java Programming Resources
 
-- [Corey Schafer](https://www.youtube.com/user/schafer5/featured) - Corey Schafer's YouTube channel was one of the first channels I found when starting to learn Python. He has videos on other topics such as data visualization and building a full stack application in Django (think, Ruby on Rails). 
-- [Derek Banas' - Getting Started with Python](https://www.youtube.com/watch?v=H1elmMBnykA) - Derek Banas' YouTube channel has proven to be extremely useful for learning not only Python but a lot of other programming languages and concepts.
-- [Real Python](https://realpython.com/) - A blog site with useful Python tutorials and articles on various topics in Python. They also have a YouTube channel to subscribe to, if you're more of a visual learner.
-- [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
+- [Java Programming Tutorial, Derek Banas](https://www.youtube.com/watch?v=n-xAqcBCws4) - This is a two hour long video tutorial that should get you started with the Java programming language.
+- [Programiz - Java](https://www.programiz.com/java-programming)
 
-### Extra Learning
+## Apply Your Knowledge - Problem Solving
 
-- [Harvards CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381L3iZyDTxRwOBuUt6m1FnW)
-- [The Missing Semester of Your CS Education (MIT)](https://missing.csail.mit.edu/)
-- [Upcase by thoughtbot](https://thoughtbot.com/upcase)
+- [Exercism.io](https://exercism.io/) - Community backed and open source, Exercism is a great place to learn and get feedback on solving problems. They offer the ability to work on solving problems with or without a mentor and it has the added benefit of being done through a command line tool.
+- [Codingbat](https://codingbat.com/) - A great place to start if you're not used to solving coding challenges, with the ability to do so in both Java and Python.
 
 ### The Community
 
-- [Denver Devs](https://denverdevs.org/) is a Slack channel dedicated to Denver's tech community. Useful for finding local events and having access to people who can answer question you might have about the industry.
-- [DenHac](https://denhac.org/) is Denver's local hackerspace, they regularly host a variety of events with like Chill Code Night and their monthly Quantum Computing meetup.
-
-### Books 
-
-- [Python Crash Course (PDF)](https://github.com/MrAlex6204/Books/blob/master/python-crash-course.pdf) - This is the CS1030 Textbook for Professor Kramer's class, I have also donated my copy to the CS Student Lounge (Hoping it stays in there...)
-
-### Miscellaneous?
-
-- [Developer Roadmaps](https://roadmap.sh/) - is useful for getting a quick overview for what you need to learn whether you want to do front-end development or back-end development
-
+- [Denver Devs](https://www.denverdevs.org/) - A Slack channel dedicated to Denver's tech community. Focused on helping each other find jobs, solve problems, make friends, and much more.
+- MSUD Computer Science Discord Channel (TBA)
