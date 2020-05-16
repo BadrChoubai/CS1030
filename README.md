@@ -14,15 +14,17 @@ Description: This repository contains source code for my CS1030 class. Homeworks
 
 ## Exam Code
 
+Each exam consisted of three coding questions, each solution is implemented in both Python and Java.
+
 - Exam One
-  - [Problem One - calculations](Exams/Exam_One/exam_01_01.py)
-  - [Problem Two - mutation_math](Exams/Exam_One/exam_01_02.py)
-  - [Problem Three - make_change](Exams/Exam_One/exam_01_03.py)
+  - [Problem One](Exams/Exam_One/README.md#problem-one)
+  - [Problem Two](Exams/Exam_One/README.md#problem-two)
+  - [Problem Three](Exams/Exam_One/README.md#problem-three)
 - Exam Two
-  - [Problem One - sum and average](Exams/Exam_Two/exam_02_01.py)
-  - [Problem Two - lottery numbersj](Exams/Exam_Two/exam_02_02.py)
-  - [Problem Three - Zip and City](Exams/Exam_Two/exam_02_03.py)
+  - [Problem One](Exams/Exam_Two/README.md#problem-one)
+  - [Problem Two](Exams/Exam_Two/README.md#problem-two)
+  - [Problem Three](Exams/Exam_Two/README.md#problem-three)
 - Exam Three
-  - [Problem One - Days in Month](Exams/Exam_Three/exam_03_01.py)
-  - [Problem Two - Oxford Comma List](Exams/Exam_Three/exam_03_02.py)
-  - [Problem Three - Unique Characters](Exams/Exam_Three/exam_03_03.py)
+  - [Problem One](Exams/Exam_Three/README.md#problem-one)
+  - [Problem Two](Exams/Exam_Three/README.md#problem-two)
+  - [Problem Three](Exams/Exam_Three/README.md#problem-three)

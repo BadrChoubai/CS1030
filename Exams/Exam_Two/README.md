@@ -1,104 +1,30 @@
-# CS 1030 Exam Two - Topics Covered and Videos
+# CS 1030 Exam Two
 
-## Topics Covered
+## Problem One
 
-- `str` functions
-  - `str` slicing
-  - `.strip()`, `.lstrip()`, `.rstrip()`
-  - `.title()`
-- Data Structures
-  - `list`
-  - `dict`
-- Looping Structures
-  - `while` loop
-  - `for` loop
-- Functions
-  - defining functions
-  - invoking functions  
-- File IO
-  - Reading files
-  - Writing to files
-  - `with` keyword
-- Testing Approaches
-  - Debugging
-  - Exceptions
-  - Unit Testing
+Write a program that prompts repeatedly for decimal numbers. Store each number in a list. Stop asking for numbers when the user enters a 0 which is not stored in the list. Calculate and print two lines of output as follows:
 
-## Study Guide Programs
+```txt
+The sum of all the numbers: $sum
+The average of all the numbers: $average
+```
 
-To practice writing program specifications and apply what we've learned I came up with two programs for myself to build.
+[View Python Code](Python/exam_02_01.py) |
+[View Java Code](Java/ExamTwoP1.java)
 
-### Program One - User Created Dictionary
+## Problem Two
 
-[Code](study_guide_pp1.py)
+Write a program that generates a list of 6 lottery numbers between 1 and 49 without duplicates. When you have six random numbers, sort them and output it to the console.
 
-- Write a program that asks a user to input words, end the program when they press `<Enter>`.
-- Add each word to a dictionary where the `key` is the first letter in the word and the value is a list of words starting with that letter.
-- The output file should look like:
+- In Python you can use `random.randint()`.
+- In Java you can use the `java.util.Random`
 
-  ```txt
-  <!-- dictionary.txt -->
-  
-  A
-  alacritty, alone
-  C
-  coding
-  G
-  guitarist
-  P
-  parasite, pedantic
-  ```
+[View Python Code](Python/exam_02_02.py) |
+[View Java Code](Java/ExamTwoP2.java)
 
-### Program Two - Word Search Engine
+## Problem Three
 
-[Code](study_guide_pp2.py)
+Write a program that reads file `ZipAndCity.txt` which contains pairs of items one pair to a line – a zip code and the city – and creates an entry in a dictionary. From each list entry, create a dictionary entry, with the zip code as the key and the city as the value.
 
-- Write a program that takes the output file from the first program as an input file.
-- Prompt the user for a single letter and if there are any words belonging to the letter print them out, otherwise prompt the user for input again.
-- Exit the program.
-
-## Exam Program Specifications
-
-### Program One
-
-- Write a program that prompts repeatedly for decimal numbers.
-- Store each number in a list.
-- Stop asking for numbers when the user enters a 0 which is not stored in the list.
-- Calculate and print two lines of output as follows:
-
-  Line 1: The sum of all the numbers: `sum goes here` \
-  Line 2:  The average of all the numbers: `average goes here`
-
-### Program Two
-
-- Write a program that generates a list of 6 lottery numbers between 1 and 49 without duplicates.
-- Use the random.randint(1,49) function to generate the random numbers. When you have 6 unique numbers, print them sorted in ascending order.
-- If your list is named ‘lottery’ then the standalone statement `lottery.sort()` sorts the list.
-
-### Program Three
-
-- Write a program that reads file “ZipAndCity.txt” which contains pairs of items one pair to a line -- a zip code and the city -- and creates an entry in the dictionary called zip_code. 
-- The pair of items are separated by a comma. Sample lines:
-
-  ```txt
-  80220,Denver
-  54901,Oshkosh
-  10024,New York
-  ```
-
-- From each list entry, create a dictionary entry, with the zip code as the key and the city as the value. 
-
-## Video Responses
-
-### Social, Ethical, Economic, Healthcare and Legal Issues in Computing, Part 1
-
-- [Coronavirus Is Our Future, Alanna Shaikh - Center for Disease Control, TED talk](https://www.youtube.com/watch?v=Fqw-9yMV0sI)
-- [Ethical, Environmental, Cultural and Legal Issues of Computing, Computer Science Tutor](https://www.youtube.com/watch?v=_uEvWNdvSwA&list=PLP8nt959Gr8NYRxuIdYQTiwXq-JpWEmiE)
-- [The ethical dilemma we face on AI and autonomous technology, Christine Fox, TED talk](https://www.youtube.com/watch?v=3oE88_6jAwc)
-
-### Social, Ethical, Economic, Healthcare and Legal Issues in Computing, Part 2
-
-- [Ethics in the Age of Technology, Juan Enriquez, TED talk](https://www.youtube.com/watch?v=iiAirfn-lBI)
-- [A New Philosophy on Artificial Intelligence, Kristian Hammond, TED talk](https://www.youtube.com/watch?v=tr9oe2TZiJw)
-- [Why Do Ethics Matter?, Shefali Roy, TED talk](https://www.youtube.com/watch?v=yesE4mcv4CM)
-- [Machine Learning Basics](https://www.youtube.com/watch?v=ukzFI9rgwfU)
+[View Python Code](Python/exam_02_03.py) |
+[View Java Code](Java/ExamTwoP3.java)
