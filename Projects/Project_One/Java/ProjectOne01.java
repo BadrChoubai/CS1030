@@ -20,9 +20,14 @@ class ProjectOne01 {
         var inches = Integer.parseInt(inchesInput);
 
         var total = (feet * 12) + inches;
-        var centimeters = total * 2.54;
-        var meters = centimeters / 100;
 
-        System.out.printf("Original height input %s, to meters: %.2fm", heightString, meters);
+        if (total >= 95) {
+            System.out.println("Wow! You're so tall");
+        } else {
+            var centimeters = total * 2.54;
+            var meters = centimeters / 100;
+
+            System.out.printf("Original height input %s, to meters: %.2fm", heightString, meters);
+        }
     }
 }
