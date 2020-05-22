@@ -7,10 +7,10 @@ Description: This repository contains source code for my CS1030 class. Homeworks
 
 ## Projects
 
-- [Python Project 1](Python_Projects/python_project_1/README.md)
-- [Python Project 2](Python_Projects/python_project_2/README.md)
-- [Python Project 3](Python_Projects/python_project_3/README.md)
-- [Python Project 4](Python_Projects/python_project_4/README.md)
+- [Python Project 1](Projects/Project_One/README.md)
+- [Python Project 2](Projects/python_project_2/README.md)
+- [Python Project 3](Projects/python_project_3/README.md)
+- [Python Project 4](Projects/python_project_4/README.md)
 
 ## Exam Code
 
