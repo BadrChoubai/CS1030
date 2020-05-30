@@ -1,5 +1,5 @@
 import unittest
-import badr_choubai_02_02__01 as problem_one
+from projectone_01 import is_valid_letter_grade 
 import random
 
 
@@ -11,7 +11,7 @@ class TestProblemOne(unittest.TestCase):
         letter_grades = ['A+', 'B-', 'C'] + ['+A', 'HEY', 'Q-']
         counter = {"Valid": 0, "Invalid": 0}
         for lg in letter_grades:
-            if problem_one.is_valid_letter_grade(lg):
+            if is_valid_letter_grade(lg):
                 counter["Valid"] += 1
             else:
                 counter["Invalid"] += 1
