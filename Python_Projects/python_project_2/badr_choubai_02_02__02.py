@@ -1,106 +1,63 @@
-'''
+"""
 Name: Badr Choubai
 Professor: David Kramer
 Class: CS 1030
 Project: Python Project Two
-'''
+"""
 from functools import reduce
 from random import choice
 
 
-def calculate_end_results(flip_results: list) -> tuple:
-    '''
-    Args:
-        flip_results: flip results from all simulations
-    Returns:
-        (tuple) of calculated minimum, average and maximum
-    '''
+def get_results(simulations: list) -> tuple:
+    min_flips = len(min(simulations))
+    max_flips = len(max(simulations))
+    average_flips = reduce(lambda x, y: x + y, [len(simulation) for simulation in simulations]) // len(simulations)
 
-    minimum = min(flip_results)
-    average = reduce(lambda x, y: x + y, flip_results) // len(flip_results)
-    maximum = max(flip_results)
-    return (minimum, average, maximum)
+    return min_flips, average_flips, max_flips
 
 
-def flip_coin() -> str:
-    '''
-    Returns:
-        choice: return random selection of value in coin
-    '''
-    coin = ('H', 'T')
-    return choice(coin)
+def simulate(times: int) -> list:
+    simulations = []
+    while len(simulations) < times:
+        current_simulation = []
 
+        while not ('T' * 3 in "".join(current_simulation[-3:]) or 'H' * 3 in "".join(current_simulation[-3:])):
+            current_simulation.append(choice(('T', 'H')))
 
-def is_valid_series(section: str) -> bool:
-    '''
-    Args:
-        section: section of string to validate
-    Returns:
-        valid: boolean of whether or not valid triplet ('HHH' or 'TTT') was found
-    '''
-    valid = ('TTT' in section or 'HHH' in section)
-    return valid
+        simulations.append(current_simulation)
 
-
-def series_results(result: dict) -> str:
-    '''
-    Args:
-        result: results for one coin flipping simulation 
-    Returns:
-        Formatted string with simulation statistics
-    '''
-    flips, series_string = result.values()
-    return f'''
-    Flips In Series: { flips };
-    Triplet String:  { series_string[-3:] };
-    Results String: { series_string.replace('', ' ', len(series_string)) }; 
-    '''
-
-
-def simulation_statistics(flip_results: list) -> str:
-    '''
-    Args:
-        flip_results: flip results from all simulations
-    Returns:
-        Formatted string with simulation statistics 
-    '''
-    (minimum, average, maximum) = calculate_end_results(flip_results)
-    return f'''
-    Statistics on finding valid Triplet:
-
-    Minimum Number of Flips: { minimum };
-    Average Number of Flips: { average };
-    Maximum Number of Flips: { maximum };
-    '''
+    return simulations
 
 
 def main():
-    simulations = input(
-        'How many coin flipping simulations would you like to run?: ')
+    playing: bool = True
 
-    if simulations.isdigit() and int(simulations) > 0:
-        simulations = int(simulations)
+    while playing:
+        try:
+            times = input("How many times would you like to flip the coin?\n> ")
+            times = int(times)
+        except ValueError:
+            print("Please type in a number value")
+
+        simulations = simulate(times)
+        (_min, avg, _max) = get_results(simulations)
+
+        for simulation in simulations:
+            print(f"Flips in series: {len(simulation)}")
+            print(f"Triple string: {''.join(simulation[-3:]).upper()}")
+            print(f"Result string: {' '.join(simulation)}\n")
+
+        print(f""
+              f"minimum number of flips: {_min}\n"
+              f"average number of flips: {avg}\n"
+              f"maximum number of flips: {_max}\n"
+              f"")
+
+        answer: str = input("Would you like to play again?\n> ")
+        playing = True if (answer == 'yes' or answer == 'y') else False
     else:
-        print("Invalid input")
         exit()
 
-    flip_results: list = []
-    while simulations > 0:
-        simulation_result = {
-            'flips': 0,
-            'series_string': ''
-        }
-        while not is_valid_series(simulation_result['series_string'][-3:]):
-            simulation_result['series_string'] += flip_coin()
-            simulation_result['flips'] += 1
 
-        print(series_results(simulation_result))
-        flip_results.append(simulation_result['flips'])
-        simulations -= 1
-
-    print(simulation_statistics(flip_results))
-    main()
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
