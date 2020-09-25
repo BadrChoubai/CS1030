@@ -6,28 +6,16 @@ Project: Python Project One
 """
 
 
-def feet_to_inches(feet: int) -> int:
-    return (feet * 12)
-
-
-def centimeters_to_meters(centimeters: float) -> float:
-    return (centimeters / 100)
-
-
-def calculate_meters(inches: int) -> float:
-    return (centimeters_to_meters(inches_to_centimeters(inches)))
-
-
-def inches_to_centimeters(inches: int) -> float:
-    return (inches * 2.54)
-
-
 def main():
 
-    height = input("Input you height as feet'inches\": ")
-    height = height.replace('\'', ' ').replace('"', '')
+    feet_to_inches = lambda feet: feet * 12
+    centimeters_to_meters = lambda centimeters: centimeters / 100
+    calculate_meters = lambda inches: centimeters_to_meters(inches_to_centimeters(inches))
+    inches_to_centimeters = lambda inches: inches* 2.54
 
-    (feet, inches) = height.split(' ')
+    feet = input("Enter your height in feet\n> ")
+    inches = input("Inches?\n> ")
+
     feet = int(feet)
     inches = int(inches)
 
