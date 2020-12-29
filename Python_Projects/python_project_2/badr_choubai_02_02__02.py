@@ -44,7 +44,7 @@ def main():
 
         for simulation in simulations:
             print(f"Flips in series: {len(simulation)}")
-            print(f"Triple string: {''.join(simulation[-3:]).upper()}")
+            print(f"Triplet string: {''.join(simulation[-3:]).upper()}")
             print(f"Result string: {' '.join(simulation)}\n")
 
         print(f""
