@@ -1,7 +1,6 @@
 # Metropolitan State University of Denver - CS1030
 
-Programming Languages: Python \
-Description: This repository contains source code for my CS1030 class. Homeworks, Exam problems, inclass solutions to problems and extracurricular items. This course is taught using Python but to prepare myself for the next semester I have begun to reimplement my solutions in Java.
+This repository contains source code for my CS1030 class. Homeworks, Exam problems, inclass solutions to problems and extracurricular items.
 
 ---
 
