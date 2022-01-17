@@ -27,3 +27,17 @@ Each exam consisted of three coding questions, each solution is implemented in b
   - [Problem One](Exams/Exam_Three/README.md#problem-one)
   - [Problem Two](Exams/Exam_Three/README.md#problem-two)
   - [Problem Three](Exams/Exam_Three/README.md#problem-three)
+
+
+## Updates
+
+Following along with the book _Unit Testing: Principles, Practices, and Patterns
+by Vladimir Khorikov, this repository is a code-along related to the topics in
+the book around Software Testing. 
+
+## Resources
+
+- [_Unit Testing_ by Vladimir Khorikov](https://www.indiebound.org/book/9781617296277)
+- [Jenkins Documentation](https://www.jenkins.io/doc/)
+- [PyTest Documentation](https://docs.pytest.org/en/6.2.x/)
+
