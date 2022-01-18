@@ -1,6 +1,6 @@
 # Problem One Specifications
 
-Description: Convert a height entered by the user as feet and inches, to meters. 
+Description: Convert a height entered by the user as feet and inches, to meters.
 
 ## Specifications
 

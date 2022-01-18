@@ -6,7 +6,10 @@ Project: Python Project Two
 '''
 
 
-def calculate_gpa(scores: [float]) -> float:
+from typing import List
+
+
+def calculate_gpa(scores: List[float]) -> float:
     '''
     Args:
         scores: all scores accumulated during input
@@ -58,7 +61,7 @@ def main():
             break
         elif grade_input == '':
             latest_gpa = calculate_gpa(latest_score_entries)
-            all_score_entries += latest_score_entries 
+            all_score_entries += latest_score_entries
             latest_score_entries.clear()
             print(f'GPA for latest entries { latest_gpa }') if latest_gpa > 0 else print(
                 'No GPA calculated')

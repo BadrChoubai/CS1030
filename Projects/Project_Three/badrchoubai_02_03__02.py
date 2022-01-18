@@ -6,7 +6,10 @@ Project: Python Project Three
 '''
 
 
-def calculate_results(numbers: [int]) -> tuple:
+from typing import List
+
+
+def calculate_results(numbers: List[int]) -> tuple:
     '''calculate_results
     This method takes a list of integers and outputs per the problem specifications
     - All numbers that are above the calculated average.
@@ -50,20 +53,25 @@ def display_results(results: tuple) -> None:
     ''')
 
 
-numbers = []
-while True:
-    number_input = input("Give me a number: ")
+def main():
+    numbers = []
+    while True:
+        number_input = input("Give me a number: ")
 
-    # validate input
-    if number_input.isdigit() and number_input != '0':
-        # append number_input to numbers list
-        numbers.append(int(number_input))
-    elif not number_input.isdigit():
-        # Prompt user to enter a number
-        print("Please enter a number.")
-        continue
-    else:
-        # calculate and display results
-        calculated_results = calculate_results(numbers)
-        display_results(calculated_results)
-        break
+        # validate input
+        if number_input.isdigit() and number_input != '0':
+            # append number_input to numbers list
+            numbers.append(int(number_input))
+        elif not number_input.isdigit():
+            # Prompt user to enter a number
+            print("Please enter a number.")
+            continue
+        else:
+            # calculate and display results
+            calculated_results = calculate_results(numbers)
+            display_results(calculated_results)
+            break
+
+
+if __name__ == "__main__":
+    main()

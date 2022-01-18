@@ -6,13 +6,14 @@ Write a program that reads sentences from a file, and calculate the occurences o
 - Print the original lines as your read them, then convert lower case letters to uppercase letters.
 - After processing all the lines in input file, display the results and output them to a file `FirstnameLastname 03 04 02 Output.txt`
 
-### Example
+## Example
 
 Given lines:
+
 - See Spot.
 - See Spot code in Python.
 
-#### The screen display and output file would look something like
+### The screen display and output file would look something like
 
 | Letter | Frequency |
 | - | - |
